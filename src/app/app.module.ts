@@ -9,6 +9,8 @@ import { TailorViewComponent } from './homepages/tailor-view/tailor-view.compone
 import { AboutComponent } from './guest-nav/about/about.component';
 import { SupportComponent } from './guest-nav/support/support.component';
 import { PrivacyComponent } from './guest-nav/privacy/privacy.component';
+import { GuestDashComponent } from './guest-nav/guest-dash/guest-dash.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,10 +21,12 @@ import { PrivacyComponent } from './guest-nav/privacy/privacy.component';
     TailorViewComponent,
     AboutComponent,
     SupportComponent,
-    PrivacyComponent
+    PrivacyComponent,
+    GuestDashComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
