@@ -8,7 +8,7 @@ nav
     border-bottom:1px solid #2AB967;
     background-color: #2AB967;
     color: white;
-    font-family: 
+    
 }
 
 .navbar-custom
@@ -30,7 +30,7 @@ main
     		color: white;*/
     		padding-top: 75px;
     		height: 778px;
-    		background-image: url(src/images/h.jpg);
+    		background-image: url("/assets/images/h.jpg");
             background-size: cover;
         }
 #abt{
