@@ -1,0 +1,128 @@
+.navbar-brand 
+{
+   margin-left: 0px;
+   margin-bottom: 10px;
+}
+nav
+{
+    border-bottom:1px solid #2AB967;
+    background-color: #2AB967;
+    color: white;
+    font-family: 
+}
+
+.navbar-custom
+{
+    height: 75px;
+}
+.fa-arrow-circle-left
+{
+ color:white;
+}
+.fa-arrow-circle-left:hover
+{
+ color:rgb(255,255,255,0.5);
+}
+main
+    	{
+    		/*background-color: #F08100;
+    		height: 778px;
+    		color: white;*/
+    		padding-top: 75px;
+    		height: 778px;
+    		background-image: url(src/images/h.jpg);
+            background-size: cover;
+        }
+#abt{
+    font-size: 60px;
+    color: white;
+    
+}
+#bet
+{
+    font-size: 60px;
+    color: #2AB967;
+}
+#text-one
+{
+    width: 475px;
+    border-style: none;
+    height: 50px;
+    background-color: rgb(255,255,255,0.6);
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 2px;
+    font-size: 17px;
+}
+#btn-one
+{
+    height: 50px;
+    width: 130px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #2AB967;
+    /* box-shadow: black 1px 1px 3px; */
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+.search
+{
+    position: absolute;
+    top: 300px;
+    left:450px;
+}
+#work
+{
+    font-size: 35px;
+    color: white;
+}
+.column
+{
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 10px; 
+}
+.col-md-9
+{
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+}
+#sign
+{
+    margin-right: 20px;
+    border-style: none;
+    height: 35px;
+    width: 110px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 19px;
+    padding-bottom: 2px;
+    margin-top: 200px;
+}
+#sign:hover{
+    background-color: rgb(255,255,255,0.4);
+    border: none;
+}
+#join
+{
+    margin-right: 20px;
+    border-style: none;
+    height: 35px;
+    width: 110px;
+    background-color: white;
+    color: #2AB967;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 19px;
+}
+#join:hover
+{
+    border: none;
+    background-color: rgb(255,255,255,0.4);
+    color: white;
+}
