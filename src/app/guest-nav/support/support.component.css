@@ -43,6 +43,37 @@ main
     font-size: 60px;
     color: #2AB967;
 }
+#text-one
+{
+    width: 475px;
+    border-style: none;
+    height: 50px;
+    background-color: rgb(255,255,255,0.6);
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 2px;
+    font-size: 17px;
+}
+#btn-one
+{
+    height: 50px;
+    width: 130px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #2AB967;
+    /* box-shadow: black 1px 1px 3px; */
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+.search
+{
+    position: absolute;
+    top: 300px;
+    left:450px;
+}
 #work
 {
     font-size: 35px;
