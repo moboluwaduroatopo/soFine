@@ -29,7 +29,7 @@ main
     		color: white;*/
     		padding-top: 75px;
     		height: 778px;
-    		background-image: url(src/images/h.jpg);
+    		background-image: url("/assets/images/h.jpg");
             background-size: cover;
         }
 #abt{
