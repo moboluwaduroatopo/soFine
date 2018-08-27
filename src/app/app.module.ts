@@ -11,6 +11,7 @@ import { SupportComponent } from './guest-nav/support/support.component';
 import { PrivacyComponent } from './guest-nav/privacy/privacy.component';
 import { GuestDashComponent } from './guest-nav/guest-dash/guest-dash.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { LoginComponent } from './join-comp/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AppRoutingModule } from './/app-routing.module';
     AboutComponent,
     SupportComponent,
     PrivacyComponent,
-    GuestDashComponent
+    GuestDashComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
