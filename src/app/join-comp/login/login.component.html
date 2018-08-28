@@ -1,3 +1,21 @@
-<p>
-  login works!
-</p>
+<button mat-button [matMenuTriggerFor]="menu" id="nav">BETA</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+<main>
+  <div id="color">
+  </div>
+</main>
+<div>
+  <h2>
+    LOG IN
+  </h2>
+</div>
+
+<!--<mat-form-field class="example-form-field">
+  <input matInput type="text" placeholder="Clearable input" [(ngModel)]="value">
+  <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>-->
