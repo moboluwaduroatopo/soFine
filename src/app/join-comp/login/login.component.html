@@ -5,13 +5,23 @@
 </mat-menu>
 <main>
   <div id="color">
+    <div class='container'>
+      <div>
+        <h2>
+          LOG IN
+        </h2>
+        <div class="example-container">
+          <mat-form-field>
+            <input matInput placeholder="Enter your email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <mat-checkbox>samuel tailor</mat-checkbox>
+    </div>
   </div>
 </main>
-<div>
-  <h2>
-    LOG IN
-  </h2>
-</div>
+
 
 <!--<mat-form-field class="example-form-field">
   <input matInput type="text" placeholder="Clearable input" [(ngModel)]="value">
