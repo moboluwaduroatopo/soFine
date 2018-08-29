@@ -354,7 +354,9 @@ nav
         {
             
         }
-        .navbar-expand-sm{display:}
+        .navbar-expand-sm{ 
+
+        }
         nav
         {
             border-bottom:1px solid #2AB967;
@@ -637,7 +639,9 @@ nav
     {
         
     }
-    .navbar-expand-sm{display:}
+    .navbar-expand-sm{
+
+    }
     .navbar-collapse span a
     {
         /* display: none; */
@@ -916,7 +920,9 @@ nav
     {
         
     }
-    .navbar-expand-sm{display:}
+    .navbar-expand-sm{
+        
+    }
     .navbar-collapse span a
     {
         /* display: none; */
@@ -1214,7 +1220,10 @@ nav
     {
         margin-left: 20%;
     }
-    .navbar-expand-sm{display:}
+    .navbar-expand-sm{
+        
+        
+    }
     nav
     {
         border-bottom:1px solid #2AB967;
