@@ -8,46 +8,27 @@
         <div class="collapse navbar-collapse offset-4" id="me"></div>
       </div>
   </nav>
-  <!-- <body>
-      <div class="login-wrap">
-          <div>
-              <div class="login-html">
-                <form>
-                  <h1  style="font-size:34px;font-weight:bold">LOG IN</h1> -->
-                    <!-- <label style="font-size:70px;font-weight:30px;margin-top:10%;">Login</label> -->
-                <!-- <input  type="email"  placeholder=" Email" required>
-                <input  type="password"  data-type="password" placeholder=" Password" required> -->
-                <!-- <div class="group">
-                    <input id="check" type="checkbox" class="check" checked>
-                    <label for="check"><span class="icon"></span> Keep me Signed in</label>
-                  </div> -->
-                  <!-- <div class="group">
-                      <input type="submit" class="button" value="Log In" style="background-color:#2AB967">
-                    </div>
-                <div class="hr"></div>
-              <div class="foot-lnk">
-                <a href="#forgot" style="text-decoration: none;">Forgot Password?</a>
-              </div>
-                </form>
+
+      <div class="container mt-4">
+          <mat-spinner style="top:30%;left:49%;position:absolute" *ngIf="wait"></mat-spinner>
+          <form #myfrom="ngForm" (ngSubmit)="submit(myform)">
+              <mat-form-field>
+                  <input matInput placeholder="Email" type="eamil" required name="email" [(ngModel)]="email">
+                </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;
+        
+            <mat-form-field>
+              <input matInput placeholder="Enter your password" [type]="hide ? 'password' :
+               'text'" required name="password" [(ngModel)]="password">
+               <mat-icon matSuffix (click)="hide = !hide"></mat-icon>
+            </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;<br>
+            <button mat-raised-button type="submit" color="accent" [disabled]="!myfrom.form.valid"  style="width:70%">Submit</button>
+          </form>
+          <div class="offset-2">
+              <a href="forgot" id="fg">Forgot Password</a>
           </div>
-          </div>
-      </div>
-  </body> -->
-    
-  <div class="container mt-4">
-    <mat-spinner style="top:30%;left:49%;position:absolute" *ngIf="wait"></mat-spinner>
-    <form #myfrom="ngForm" (ngSubmit)="submit(myform)">
-        <mat-form-field>
-            <input matInput placeholder="Email" type="eamil" required name="email" [(ngModel)]="email">
-          </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+
+        {{hide ? 'visibility' :
+        'visibility_off'}}
+ 
   
-      <mat-form-field>
-        <input matInput placeholder="Enter your password" [type]="hide ? 'password' :
-         'text'" required name="password" [(ngModel)]="password">
-         <mat-icon matSuffix (click)="hide = !hide"> </mat-icon>
-      </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;
-      <button mat-raised-button type="submit" color="accent" [disabled]="!myfrom.form.valid">Submit</button>
-    </form>
-  </div>
-  {{hide ? 'visibility' :
-  'visibility_off'}}
