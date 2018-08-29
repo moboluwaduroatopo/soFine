@@ -1,114 +1,53 @@
-
-      
-      
-     
-       <html lang="en" >
-
-<head>
-  <meta charset="UTF-8">
-  <title>BETA</title>
-  
-  
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
-
-    
-
-  <script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "150px";
-    document.getElementById("main").style.marginLeft = "200px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-    document.body.style.backgroundColor = "white";
-}
-</script>
-</head>
-<body>
-  
-    <div id="mySidenav" class="sidenav">
-     	 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <li class="#"><a href="">HOME</a></li>
-             <a href="#">ABOUT</a>
-            <a href="#">SERVICES</a>
-            <a href="#">CONTACT</a>
-            <a href="#">CUSTOMER</a>
-     		<a href="#">STAFF</a>
-			<a href="#">MESSAGE</a>
-     </div>
- 
-
-
-<p onclick="openNav()" style="cursor:pointer;color:white;font-size:30px;padding-top:30px;">☰</p>
-<h3 style="text-align:center; margin-top:-100px;background-color:#2AB967;color:white;font-size:40px;padding-top:60px;height:100px;">BETA</h3>
-<h2 style="float:right ;margin-top:-80px;color:white;cursor:pointer;">X</h2>
-    <div class="login-wrap" style="margin-top:40px;">
-        <div class="login-html">
-          <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab" style="text-align:center;">Log In </label>
-          <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab" style="float:right">Sign Up</label>
-          <div class="login-form">  
-            <!-- login own -->
-            <form  (submit)="loginUser($event)" class="sign-in-htm" style="margin-top:50px;">
-              <div class="group">
-                
-                <input id="user" type="email" class="input" placeholder="Email" required>
-              </div>
-              <div class="group">
-                
-                <input id="pass" type="password" class="input" data-type="password" placeholder="Password" required>
-              </div>
-              <div class="group">
-                <input id="check" type="checkbox" class="check" checked>
-                <label for="check"><span class="icon"></span> Keep me Signed in</label>
-              </div>
-              <div class="group">
-                <input type="submit" class="button" value="Log In">
-              </div>
-              <div class="hr"></div>
-              <div class="foot-lnk">
-                <a href="#forgot">Forgot Password?</a>
-              </div>  
-            </form>
-            <!-- sign up own -->
-            <form  (submit)="loginUse($event)" class="sign-up-htm" style="margin-top:50px;">
-              <div class="group">
-                
-                <input id="user" type="text" class="input" placeholder="Firstname">
-              </div>
-              <div class="group">
-                
-                <input id="pass" type="text" class="input" placeholder="Lastname">
-              </div>
-              <div class="group">
-                <input id="pass" type="text" class="input" placeholder="Phone Number">
-              </div>
-              <div class="group">
-                
-                <input id="pass" type="email" class="input" placeholder="Email">
-              </div>
-              <div class="group">
-                
-                <input id="pass" type="password" class="input" data-type="password" placeholder="Password">
-              </div>
-              <div class="group">
-                
-                <input id="pass" type="text" class="input"  placeholder="Religion">
-              </div>
-              <div class="group">
-                <input type="submit" class="button" value="Sign Up">
-              </div>
-              <div class="hr"></div>
-              <div class="foot-lnk">
-                <label for="tab-1" style="color:white;"><h3 style="color:white;margin-top:-100px;">Already Member?</h3></label>
-              </div>
-      
-            </form>
-          </div>
-        </div>
+<nav class="navbar navbar-dark navbar-custom navbar-expand-sm fixed-top" style="background-color:#2AB967;height:80px">
+    <div class="container-fluid">
+      <a href="" class="nav-link"><i class="fa fa-arrow-circle-left fa-2x" style="color:antiquewhite"></i></a>
+      <a href="" class="navbar-brand" style="font-size:55px;"><div>Beta</div></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#me">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse offset-4" id="me"></div>
       </div>
-        
-        
-      
-      </body>
+  </nav>
+  <!-- <body>
+      <div class="login-wrap">
+          <div>
+              <div class="login-html">
+                <form>
+                  <h1  style="font-size:34px;font-weight:bold">LOG IN</h1> -->
+                    <!-- <label style="font-size:70px;font-weight:30px;margin-top:10%;">Login</label> -->
+                <!-- <input  type="email"  placeholder=" Email" required>
+                <input  type="password"  data-type="password" placeholder=" Password" required> -->
+                <!-- <div class="group">
+                    <input id="check" type="checkbox" class="check" checked>
+                    <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                  </div> -->
+                  <!-- <div class="group">
+                      <input type="submit" class="button" value="Log In" style="background-color:#2AB967">
+                    </div>
+                <div class="hr"></div>
+              <div class="foot-lnk">
+                <a href="#forgot" style="text-decoration: none;">Forgot Password?</a>
+              </div>
+                </form>
+          </div>
+          </div>
+      </div>
+  </body> -->
+    
+  <div class="container mt-4">
+    <mat-spinner style="top:30%;left:49%;position:absolute" *ngIf="wait"></mat-spinner>
+    <form #myfrom="ngForm" (ngSubmit)="submit(myform)">
+        <mat-form-field>
+            <input matInput placeholder="Email" type="eamil" required name="email" [(ngModel)]="email">
+          </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;
+  
+      <mat-form-field>
+        <input matInput placeholder="Enter your password" [type]="hide ? 'password' :
+         'text'" required name="password" [(ngModel)]="password">
+         <mat-icon matSuffix (click)="hide = !hide"> </mat-icon>
+      </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;
+      <button mat-raised-button type="submit" color="accent" [disabled]="!myfrom.form.valid">Submit</button>
+    </form>
+  </div>
+  {{hide ? 'visibility' :
+  'visibility_off'}}

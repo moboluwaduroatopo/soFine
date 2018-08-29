@@ -8,7 +8,6 @@ nav
     border-bottom:1px solid #2AB967;
     background-color: #2AB967;
     color: white;
-    font-family: 
 }
 
 .navbar-custom
@@ -29,10 +28,10 @@ nav
 }
 #sign
 {
-    margin-right: 20px;
+    margin-right: 19px;
     border-style: none;
     height: 35px;
-    width: 80px;
+    width: 70px;
     background-color: transparent;
     color: white;
     border: 2px solid white;
