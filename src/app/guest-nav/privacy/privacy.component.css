@@ -168,7 +168,8 @@ main
     display: none;
 }
 }
-@media (max-width:415px) and (min-width:410px) {
+@media (max-width:415px) and (min-width:410px) 
+{
     .navbar-toggler-icon{display: none;}
     main
             {
@@ -308,7 +309,8 @@ main
         display: none;
     }     
 }
-@media (max-width:1030px) and (min-width:992px) {
+@media (max-width:1030px) and (min-width:992px) 
+{
     .navbar-toggler-icon{display: none;}
     main
             {
@@ -377,3 +379,4 @@ main
     {
         display: none;
     } 
+}

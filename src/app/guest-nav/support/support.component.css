@@ -283,7 +283,8 @@ border-top-right-radius: 30px;
 }
 
 }
-@media (max-width:1030px) and (min-width:992px) {
+@media (max-width:1030px) and (min-width:992px) 
+{
     .navbar-toggler-icon{display: none;}
     .navbar-brand 
     {
@@ -348,4 +349,5 @@ background-color: #2AB967;
 border-bottom-right-radius: 30px;
 border-top-right-radius: 30px;
 
+}
 }
