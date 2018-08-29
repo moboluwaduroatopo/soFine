@@ -65,7 +65,7 @@ import { RegistrationComponent } from './join-comp/registration/registration.com
     SupportComponent,
     PrivacyComponent,
     GuestDashComponent,
-    TailorHomeComponent
+    TailorHomeComponent,
     LoginComponent,
     RegistrationComponent,
   ],
