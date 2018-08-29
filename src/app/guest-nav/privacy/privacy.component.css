@@ -8,7 +8,7 @@ nav
     border-bottom:1px solid #2AB967;
     background-color: #2AB967;
     color: white;
-    font-family: 
+  
 }
 
 .navbar-custom
@@ -30,7 +30,7 @@ main
     		color: white;*/
     		margin-top: 75px;
     		height: 625px;
-    		background-image: url(src/images/h.jpg);
+    		background-image: url("/assets/images/h.jpg");
             background-size: cover;
             background-attachment: fixed;
         }
@@ -106,7 +106,7 @@ main
     		color: white;*/
     		margin-top: 75px;
     		height: 100%;
-    		background-image: url(src/images/h.jpg);
+    		background-image: url("/assets/images/h.jpg");
             background-size: cover;
             background-attachment: fixed;
         }
@@ -138,7 +138,7 @@ main
 }
 #sign
 {
-    margin-right: ;
+    
     border-style: none;
     height: 35px;
     width: 110px;
@@ -152,7 +152,7 @@ main
 }
 #join
 {
-    margin-right: ;
+    
     border-style: none;
     height: 35px;
     width: 110px;
@@ -176,7 +176,7 @@ main
                 color: white;*/
                 margin-top: 75px;
                 height: 100%;
-                background-image: url(src/images/h.jpg);
+                background-image: url("/assets/images/h.jpg");
                 background-size: cover;
                 background-attachment: fixed;
             }
@@ -208,7 +208,7 @@ main
     }
     #sign
     {
-        margin-right: ;
+        
         border-style: none;
         height: 35px;
         width: 110px;
@@ -222,7 +222,7 @@ main
     }
     #join
     {
-        margin-right: ;
+       
         border-style: none;
         height: 35px;
         width: 110px;
@@ -246,7 +246,7 @@ main
                 color: white;*/
                 margin-top: 75px;
                 height: 1024px;
-                background-image: url(src/images/h.jpg);
+                background-image: url("/assets/images/h.jpg");
                 background-size: cover;
                 background-attachment: fixed;
             }
@@ -278,7 +278,7 @@ main
     }
     #sign
     {
-        margin-right: ;
+        
         border-style: none;
         height: 35px;
         width: 110px;
@@ -292,7 +292,7 @@ main
     }
     #join
     {
-        margin-right: ;
+       
         border-style: none;
         height: 35px;
         width: 110px;
@@ -316,7 +316,7 @@ main
                 color: white;*/
                 margin-top: 75px;
                 height: 100vh;
-                background-image: url(src/images/h.jpg);
+                background-image: url("/assets/images/h.jpg");
                 background-size: cover;
                 background-attachment: fixed;
             }
@@ -348,7 +348,7 @@ main
     }
     #sign
     {
-        margin-right: ;
+        
         border-style: none;
         height: 35px;
         width: 110px;
@@ -362,7 +362,7 @@ main
     }
     #join
     {
-        margin-right: ;
+        
         border-style: none;
         height: 35px;
         width: 110px;

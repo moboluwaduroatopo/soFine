@@ -30,7 +30,7 @@ main
     		color: white;*/
     		margin-top: 75px;
     		height: 625px;
-    		background-image: url(src/images/h.jpg);
+    		background-image: url("/assets/images/h.jpg");
             background-size: cover;
             background-attachment: fixed;
         }
@@ -96,10 +96,7 @@ main
     background-color: rgb(255,255,255,0.4);
     color: white;
 }
-.col-md-3
-{
 
-}
 
 @media (max-width: 375px) {
     .navbar-toggler-icon{display: none;}
@@ -110,7 +107,7 @@ main
     		color: white;*/
     		margin-top: 75px;
     		height: 100%;
-    		background-image: url(src/images/h.jpg);
+    		background-image: url("/assets/images/h.jpg");
             background-size: cover;
             background-attachment: fixed;
         }
@@ -142,7 +139,7 @@ main
 }
 #sign
 {
-    margin-right: ;
+    /* margin-right: ; */
     border-style: none;
     height: 35px;
     width: 110px;
@@ -156,7 +153,7 @@ main
 }
 #join
 {
-    margin-right: ;
+    /* margin-right: ; */
     border-style: none;
     height: 35px;
     width: 110px;
@@ -180,7 +177,7 @@ main
                 color: white;*/
                 margin-top: 75px;
                 height: 100%;
-                background-image: url(src/images/h.jpg);
+                background-image: url("/assets/images/h.jpg");
                 background-size: cover;
                 background-attachment: fixed;
             }
@@ -212,7 +209,7 @@ main
     }
     #sign
     {
-        margin-right: ;
+        /* margin-right: ; */
         border-style: none;
         height: 35px;
         width: 110px;
@@ -226,7 +223,7 @@ main
     }
     #join
     {
-        margin-right: ;
+        /* margin-right: ; */
         border-style: none;
         height: 35px;
         width: 110px;
@@ -250,7 +247,7 @@ main
                 color: white;*/
                 margin-top: 75px;
                 height: 1024px;
-                background-image: url(src/images/h.jpg);
+                background-image: url("/assets/images/h.jpg");
                 background-size: cover;
                 background-attachment: fixed;
             }
@@ -282,7 +279,7 @@ main
     }
     #sign
     {
-        margin-right: ;
+        /* margin-right: ; */
         border-style: none;
         height: 35px;
         width: 110px;
@@ -296,7 +293,7 @@ main
     }
     #join
     {
-        margin-right: ;
+        /* margin-right: ; */
         border-style: none;
         height: 35px;
         width: 110px;
@@ -320,7 +317,7 @@ main
                 color: white;*/
                 margin-top: 75px;
                 height: 100vh;
-                background-image: url(src/images/h.jpg);
+                background-image: url("/assets/images/h.jpg");
                 background-size: cover;
                 background-attachment: fixed;
             }
@@ -352,7 +349,7 @@ main
     }
     #sign
     {
-        margin-right: ;
+        /* margin-right: ; */
         border-style: none;
         height: 35px;
         width: 110px;
@@ -366,7 +363,7 @@ main
     }
     #join
     {
-        margin-right: ;
+        /* margin-right: ; */
         border-style: none;
         height: 35px;
         width: 110px;
