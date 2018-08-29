@@ -51,9 +51,9 @@ import { SupportComponent } from './guest-nav/support/support.component';
 import { PrivacyComponent } from './guest-nav/privacy/privacy.component';
 import { GuestDashComponent } from './guest-nav/guest-dash/guest-dash.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { TailorHomeComponent } from './homepages/tailor-view/tailor-home/tailor-home.component';
 import { LoginComponent } from './join-comp/login/login.component';
 import { RegistrationComponent } from './join-comp/registration/registration.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,6 +65,7 @@ import { RegistrationComponent } from './join-comp/registration/registration.com
     SupportComponent,
     PrivacyComponent,
     GuestDashComponent,
+    TailorHomeComponent,
     LoginComponent,
     RegistrationComponent,
   ],
