@@ -8,7 +8,7 @@ nav
     border-bottom:1px solid #2AB967;
     background-color: #2AB967;
     color: white;
-    font-family: 
+   
 }
 
 .navbar-custom
@@ -28,10 +28,11 @@ main
     		/*background-color: #F08100;
     		height: 778px;
     		color: white;*/
-    		padding-top: 75px;
-    		height: 778px;
-    		background-image: url(src/images/h.jpg);
+    		margin-top: 75px;
+    		height: 625px;
+    		background-image: url("/assets/images/h.jpg");
             background-size: cover;
+            background-attachment: fixed;
         }
 #abt{
     font-size: 60px;
@@ -95,3 +96,289 @@ main
     background-color: rgb(255,255,255,0.4);
     color: white;
 }
+.col-md-3
+{
+
+}
+
+@media (max-width: 375px) {
+    .navbar-toggler-icon{display: none;}
+main
+    	{
+    		/*background-color: #F08100;
+    		height: 778px;
+    		color: white;*/
+    		margin-top: 75px;
+    		height: 100%;
+    		background-image: url("/assets/images/h.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+#abt{
+    font-size: 50px;
+    color: white;
+    
+}
+#bet
+{
+    font-size: 50px;
+    color: #2AB967;
+}
+#work
+{
+    font-size: 30px;
+    color: white;
+}
+.column
+{
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 10px; 
+}
+.col-md-9
+{
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+}
+#sign
+{
+    /* margin-right: ; */
+    border-style: none;
+    height: 35px;
+    width: 110px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 19px;
+    padding-bottom: 2px;
+    margin-top: 200px;
+}
+#join
+{
+    /* margin-right: ; */
+    border-style: none;
+    height: 35px;
+    width: 110px;
+    background-color: white;
+    color: #2AB967;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 19px;
+}
+.col-md-3
+{
+    display: none;
+}
+}
+@media (max-width:415px) and (min-width:410px) {
+    .navbar-toggler-icon{display: none;}
+    main
+            {
+                /*background-color: #F08100;
+                height: 778px;
+                color: white;*/
+                margin-top: 75px;
+                height: 100%;
+                background-image: url("/assets/images/h.jpg");
+                background-size: cover;
+                background-attachment: fixed;
+            }
+    #abt{
+        font-size: 50px;
+        color: white;
+        
+    }
+    #bet
+    {
+        font-size: 50px;
+        color: #2AB967;
+    }
+    #work
+    {
+        font-size: 30px;
+        color: white;
+    }
+    .column
+    {
+        background-color: rgba(0,0,0,0.5);
+        margin-top: 10px; 
+    }
+    .col-md-9
+    {
+        color: white;
+        font-size: 18px;
+        line-height: 40px;
+    }
+    #sign
+    {
+        /* margin-right: ; */
+        border-style: none;
+        height: 35px;
+        width: 110px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        border-radius: 20px;
+        font-size: 19px;
+        padding-bottom: 2px;
+        margin-top: 200px;
+    }
+    #join
+    {
+        /* margin-right: ; */
+        border-style: none;
+        height: 35px;
+        width: 110px;
+        background-color: white;
+        color: #2AB967;
+        border: 1px solid white;
+        border-radius: 20px;
+        font-size: 19px;
+    }
+    .col-md-3
+    {
+        display: none;
+    }  
+}
+@media (max-width: 770px) and (min-width:760px) {
+    .navbar-toggler-icon{display: none;}
+    main
+            {
+                /*background-color: #F08100;
+                height: 778px;
+                color: white;*/
+                margin-top: 75px;
+                height: 1024px;
+                background-image: url("/assets/images/h.jpg");
+                background-size: cover;
+                background-attachment: fixed;
+            }
+    #abt{
+        font-size: 50px;
+        color: white;
+        
+    }
+    #bet
+    {
+        font-size: 50px;
+        color: #2AB967;
+    }
+    #work
+    {
+        font-size: 30px;
+        color: white;
+    }
+    .column
+    {
+        background-color: rgba(0,0,0,0.5);
+        margin-top: 10px; 
+    }
+    .col-md-9
+    {
+        color: white;
+        font-size: 18px;
+        line-height: 40px;
+    }
+    #sign
+    {
+        /* margin-right: ; */
+        border-style: none;
+        height: 35px;
+        width: 110px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        border-radius: 20px;
+        font-size: 19px;
+        padding-bottom: 2px;
+        margin-top: 200px;
+    }
+    #join
+    {
+        /* margin-right: ; */
+        border-style: none;
+        height: 35px;
+        width: 110px;
+        background-color: white;
+        color: #2AB967;
+        border: 1px solid white;
+        border-radius: 20px;
+        font-size: 19px;
+    }
+    .col-md-3
+    {
+        display: none;
+    }     
+}
+@media (max-width:1030px) and (min-width:992px) 
+{
+    .navbar-toggler-icon{display: none;}
+    main
+            {
+                /*background-color: #F08100;
+                height: 778px;
+                color: white;*/
+                margin-top: 75px;
+                height: 100vh;
+                background-image: url("/assets/images/h.jpg");
+                background-size: cover;
+                background-attachment: fixed;
+            }
+    #abt{
+        font-size: 50px;
+        color: white;
+        
+    }
+    #bet
+    {
+        font-size: 50px;
+        color: #2AB967;
+    }
+    #work
+    {
+        font-size: 30px;
+        color: white;
+    }
+    .column
+    {
+        background-color: rgba(0,0,0,0.5);
+        margin-top: 10px; 
+    }
+    .col-md-9
+    {
+        color: white;
+        font-size: 24px;
+        line-height: 60px;
+    }
+    #sign
+    {
+        /* margin-right: ; */
+        border-style: none;
+        height: 35px;
+        width: 110px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        border-radius: 20px;
+        font-size: 19px;
+        padding-bottom: 2px;
+        margin-top: 200px;
+    }
+    #join
+    {
+        /* margin-right: ; */
+        border-style: none;
+        height: 35px;
+        width: 110px;
+        background-color: white;
+        color: #2AB967;
+        border: 1px solid white;
+        border-radius: 20px;
+        font-size: 19px;
+    }
+    .col-md-3
+    {
+        display: none;
+    }
+} 
