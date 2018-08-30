@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,17 +6,16 @@ import {FormControl, Validators} from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
- wait:boolean = false;
+  wait:boolean = false;
   constructor() { }
-submit(form){
-  this.wait = true
-  setTimeout(()=>{
-    alert('Email is ${form.value.email} and password is {form.value.password}')
-    this.wait = false
-  },1000)
-}
+  submit(form){
+    this.wait = true
+    setTimeout(()=>{
+      alert('Email is ${form.value.email} and password is ${form.value.password}')
+      this.wait = false
+    },1000)
+  }
   ngOnInit() {
   }
- 
-  
+
 }
