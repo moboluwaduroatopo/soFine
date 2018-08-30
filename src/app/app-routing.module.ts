@@ -6,7 +6,7 @@ import { AboutComponent } from './guest-nav/about/about.component';
 import { SupportComponent } from './guest-nav/support/support.component';
 import { PrivacyComponent } from './guest-nav/privacy/privacy.component';
 import { GuestDashComponent } from './guest-nav/guest-dash/guest-dash.component';
-
+import { JoinCompComponent } from './join-comp/join-comp.component';
 const appRoutes:Routes = [
   {
     path:'',
@@ -15,6 +15,10 @@ const appRoutes:Routes = [
   {
     path:'about',
     component: AboutComponent
+  },
+  {
+    path:'login',
+    component: JoinCompComponent
   },
   {
     path:'support',
