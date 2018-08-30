@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { GuestNavComponent } from './guest-nav/guest-nav.component';
@@ -6,7 +6,10 @@ import { AboutComponent } from './guest-nav/about/about.component';
 import { SupportComponent } from './guest-nav/support/support.component';
 import { PrivacyComponent } from './guest-nav/privacy/privacy.component';
 import { GuestDashComponent } from './guest-nav/guest-dash/guest-dash.component';
-import { JoinCompComponent } from './join-comp/join-comp.component';
+import { LoginComponent } from './join-comp/login/login.component';
+import { RegComponent } from './join-comp/reg/reg.component';
+import { ForgotComponent } from './join-comp/forgot/forgot.component';
+
 const appRoutes:Routes = [
   {
     path:'',
@@ -17,17 +20,25 @@ const appRoutes:Routes = [
     component: AboutComponent
   },
   {
-    path:'login',
-    component: JoinCompComponent
-  },
-  {
     path:'support',
     component: SupportComponent
   },
   {
     path:'privacy',
     component: PrivacyComponent
-  }
+  },
+  {
+    path:'login',
+    component: LoginComponent
+  },
+  {
+    path:'reg',
+    component:RegComponent
+  },
+  {
+    path:'forgot',
+     component:ForgotComponent
+  },
 ]
 
 @NgModule({
