@@ -105,7 +105,10 @@ import { LoginComponent } from './join-comp/login/login.component';
 import { RegComponent } from './join-comp/reg/reg.component';
 import { FormsModule,  } from '@angular/forms';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
+<<<<<<< HEAD
 import { SettingsComponent } from './homepages/settings/settings.component';
+=======
+>>>>>>> fc5982f10a79895919facfaf8b03172f51f03f3e
 @NgModule({
   declarations: [
     AppComponent,
@@ -121,7 +124,10 @@ import { SettingsComponent } from './homepages/settings/settings.component';
     LoginComponent,
     RegComponent,
     ForgotComponent,
+<<<<<<< HEAD
     SettingsComponent,
+=======
+>>>>>>> fc5982f10a79895919facfaf8b03172f51f03f3e
   ],
   imports: [
     BrowserModule,
