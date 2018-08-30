@@ -1,42 +1,77 @@
-<!-- <button mat-raised-button (click)="isEditable = !isEditable">
-    {{!isEditable ? 'Enable edit mode' : 'Disable edit mode'}}
-  </button>
-  
-  <mat-horizontal-stepper linear #stepper>
-    <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
-      <form [formGroup]="firstFormGroup">
-        <ng-template matStepLabel>Fill out your name</ng-template>
-        <mat-form-field>
-          <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
-        </mat-form-field>
-        <div>
-          <button mat-button matStepperNext>Next</button>
+<nav class="navbar navbar-dark navbar-custom navbar-expand-sm fixed-top" style="background-color:#2AB967;height:12vh">
+    <div class="container-fluid">
+      <a href="" class="nav-link"><i class="fa fa-arrow-circle-left fa-2x" style="color:aliceblue"></i></a>
+      <a href="" class="navbar-brand" style="font-size:55px;"><div>Beta</div></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#me">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse offset-4" id="me">
+               
         </div>
-      </form>
+    </div>
+  </nav>
+
+  
+  <div class="container" style="margin-top:130px">
+      <button mat-raised-button (click)="isEditable = !isEditable">
+          {{!isEditable ? 'Enable edit mode' : 'Disable edit mode'}}
+        </button>
+        <mat-horizontal-stepper linear #stepper>
+            <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
+    <form>
+        <ng-template matStepLabel>Personal Info</ng-template>
+        <mat-form-field>
+            <input matInput placeholder="First name"  required name="frist"[(ngModel)]="frist">
+          </mat-form-field><br>
+          <mat-form-field>
+              <input matInput placeholder="Last name"  required name="last"[(ngModel)]="last">
+            </mat-form-field><br>
+            <mat-form-field>
+                <input matInput placeholder="Country name"  required name="country"[(ngModel)]="country">
+              </mat-form-field><br>
+              <mat-form-field>
+                  <input matInput placeholder="State"  required name="state"[(ngModel)]="state">
+                </mat-form-field>
+
+          <div>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+    </form>
     </mat-step>
     <mat-step [stepControl]="secondFormGroup" [editable]="isEditable">
-      <form [formGroup]="secondFormGroup">
-        <ng-template matStepLabel>Fill out your address</ng-template>
-        <mat-form-field>
-          <input matInput placeholder="Address" formControlName="secondCtrl" required>
-        </mat-form-field>
-        <div>
-          <button mat-button matStepperPrevious>Back</button>
-          <button mat-button matStepperNext>Next</button>
-        </div>
+      <form>
+          <ng-template matStepLabel>Create An Account</ng-template>
+          <mat-form-field>
+            <input matInput placeholder="Display Name" required name="displayname"[(ngModel)]="displayname">
+          </mat-form-field><br>
+          <mat-form-field>
+              <input matInput placeholder="Email" required name="email"[(ngModel)]="email">
+            </mat-form-field><br>
+          <mat-form-field>
+              <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" required name="password"[(ngModel)]="password">
+              <mat-icon matSuffix (click)="hide = '!hide'">{{hide ? 'visibility': 'visibility_off'}}</mat-icon>
+            </mat-form-field><br>
+        
+            <mat-form-field>
+                <input matInput placeholder="Region"  required name="region"[(ngModel)]="region">
+              </mat-form-field><br>
+              <mat-form-field>
+                  <input matInput placeholder="Address"  required name="address"[(ngModel)]="address">
+                </mat-form-field><br>
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+          </div>
       </form>
     </mat-step>
+
     <mat-step>
-      <ng-template matStepLabel>Done</ng-template>
-      You are now done.
-      <div>
-        <button mat-button matStepperPrevious>Back</button>
-        <button mat-button (click)="stepper.reset()">Reset</button>
-      </div>
-    </mat-step>
-  </mat-horizontal-stepper> -->
-  
-  
-  <!-- Copyright 2018 Google Inc. All Rights Reserved.
-      Use of this source code is governed by an MIT-style license that
-      can be found in the LICENSE file at http://angular.io/license -->
+        <ng-template matStepLabel>Done</ng-template>
+        You are now done.
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button (click)="stepper.reset()">Reset</button>
+        </div>
+      </mat-step>
+  </mat-horizontal-stepper>
+  </div>
