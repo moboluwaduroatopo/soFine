@@ -1,3 +1,4 @@
+
 .navbar-brand 
 {
    margin-left: 0px;
@@ -24,14 +25,14 @@ nav
     margin-left: 40%;
 }
 
-.navbar-collapse span a
+.navbar-collapse span b a
 {
     font-size: 20px;
     margin-right: 20px;
     text-decoration: none;
     color:white;
 }
-.navbar-collapse span a:hover
+.navbar-collapse span b a:hover
 {
     border-bottom: 3px solid white;
     padding-bottom: 25px;
@@ -1468,4 +1469,4 @@ nav
 @media (min-width: 1200px) {
 	
 }
- 
+

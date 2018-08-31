@@ -8,6 +8,7 @@ nav
     border-bottom:1px solid #2AB967;
     background-color: #2AB967;
     color: white;
+    /* font-family:  */
 }
 
 .navbar-custom
@@ -29,7 +30,7 @@ main
     		color: white;*/
     		margin-top: 75px;
     		height: 625px;
-    		background-image: url("/assets/images/h.jpg");
+    		background-image:url("/assets/images/h.jpg");
             background-size: cover;
             background-attachment: fixed;
         }
@@ -274,7 +275,8 @@ border-top-right-radius: 30px;
 }
 
 }
-@media (max-width:1030px) and (min-width:992px) {
+@media (max-width:1030px) and (min-width:992px) 
+{
     .navbar-toggler-icon{display: none;}
     
 main
@@ -337,5 +339,4 @@ border-bottom-right-radius: 30px;
 border-top-right-radius: 30px;
 
 }
-
 }
