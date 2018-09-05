@@ -9,6 +9,7 @@ import { GuestDashComponent } from './guest-nav/guest-dash/guest-dash.component'
 import { LoginComponent } from './join-comp/login/login.component';
 import { RegComponent } from './join-comp/reg/reg.component';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
+import { InboxComponent } from './homepages/inbox/inbox.component';
 
 const appRoutes:Routes = [
   {
@@ -38,6 +39,10 @@ const appRoutes:Routes = [
   {
     path:'forgot',
      component:ForgotComponent
+  },
+  {
+    path:'inbox',
+     component:InboxComponent
   },
 ]
 
