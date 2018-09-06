@@ -10,6 +10,7 @@ import { LoginComponent } from './join-comp/login/login.component';
 import { RegComponent } from './join-comp/reg/reg.component';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
 import { DashboardComponent } from './homepages/customer-view/dashboard/dashboard.component';
+import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dashboardhome/dashboardhome.component';
 
 const appRoutes:Routes = [
   {
@@ -43,6 +44,10 @@ const appRoutes:Routes = [
   {
     path:'dashboard',
      component:DashboardComponent
+  },
+  {
+    path:'dashboardhome',
+    component:DashboardhomeComponent
   },
 ]
 

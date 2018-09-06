@@ -86,8 +86,10 @@ import {
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
-  MatFormFieldModule,
+  MatFormFieldModule, 
 } from '@angular/material';
+import {BehaviorSubject} from 'rxjs';
+import {MatTreeNestedDataSource} from '@angular/material/tree';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -106,6 +108,7 @@ import { RegComponent } from './join-comp/reg/reg.component';
 import { FormsModule,  } from '@angular/forms';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
 import { DashboardComponent } from './homepages/customer-view/dashboard/dashboard.component';
+import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dashboardhome/dashboardhome.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -122,6 +125,7 @@ import { DashboardComponent } from './homepages/customer-view/dashboard/dashboar
     RegComponent,
     ForgotComponent,
     DashboardComponent,
+    DashboardhomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -204,10 +208,12 @@ import { DashboardComponent } from './homepages/customer-view/dashboard/dashboar
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
-  MatFormFieldModule
+  MatFormFieldModule, 
   ],
   entryComponents: [],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { };
+
+platformBrowserDynamic().bootstrapModule(AppModule);
