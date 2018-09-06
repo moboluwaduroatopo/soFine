@@ -9,6 +9,9 @@ import { GuestDashComponent } from './guest-nav/guest-dash/guest-dash.component'
 import { LoginComponent } from './join-comp/login/login.component';
 import { RegComponent } from './join-comp/reg/reg.component';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
+import { ProfileComponent } from './homepages/tailor-view/profile/profile.component';
+import { ClientComponent } from './homepages/tailor-view/client/client.component';
+import { DetailsComponent } from './homepages/tailor-view/details/details.component';
 
 const appRoutes:Routes = [
   {
@@ -38,6 +41,18 @@ const appRoutes:Routes = [
   {
     path:'forgot',
      component:ForgotComponent
+  },
+  {
+    path:'profile',
+    component: ProfileComponent
+  },
+  {
+    path:'client',
+    component: ClientComponent
+  },
+  {
+    path:'details',
+    component: DetailsComponent
   },
 ]
 

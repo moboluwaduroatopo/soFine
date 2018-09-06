@@ -105,6 +105,9 @@ import { LoginComponent } from './join-comp/login/login.component';
 import { RegComponent } from './join-comp/reg/reg.component';
 import { FormsModule,  } from '@angular/forms';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
+import { ProfileComponent } from './homepages/tailor-view/profile/profile.component';
+import { ClientComponent } from './homepages/tailor-view/client/client.component';
+import { DetailsComponent } from './homepages/tailor-view/details/details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -120,6 +123,9 @@ import { ForgotComponent } from './join-comp/forgot/forgot.component';
     LoginComponent,
     RegComponent,
     ForgotComponent,
+    ProfileComponent,
+    ClientComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
