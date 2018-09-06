@@ -45,6 +45,7 @@
 // } from '@angular/material';
 // import './polyfills';
 import { BrowserModule } from '@angular/platform-browser';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
 import {HttpClientModule} from '@angular/common/http';
@@ -105,6 +106,9 @@ import { LoginComponent } from './join-comp/login/login.component';
 import { RegComponent } from './join-comp/reg/reg.component';
 import { FormsModule,  } from '@angular/forms';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
+import { MyServicesComponent } from './homepages/tailor-view/my-services/my-services.component';
+import { ManageComponent } from './homepages/tailor-view/manage/manage.component';
+import { ManageJobComponent } from './homepages/tailor-view/manage-job/manage-job.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -120,6 +124,9 @@ import { ForgotComponent } from './join-comp/forgot/forgot.component';
     LoginComponent,
     RegComponent,
     ForgotComponent,
+    MyServicesComponent,
+    ManageComponent,
+    ManageJobComponent,
   ],
   imports: [
     BrowserModule,
