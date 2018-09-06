@@ -11,8 +11,8 @@ import { RegComponent } from './join-comp/reg/reg.component';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
 import { SettingsComponent } from './homepages/tailor-view/settings/settings.component';
 import { NotificationComponent } from './homepages/customer-view/notification/notification.component';
-
-
+import { DashboardComponent } from './homepages/customer-view/dashboard/dashboard.component';
+import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dashboardhome/dashboardhome.component';
 const appRoutes:Routes = [
   {
     path:'',
@@ -49,6 +49,15 @@ const appRoutes:Routes = [
   {
     path:'notifications',
     component: NotificationComponent
+  },
+  {
+    path:'dashboard',
+     component:DashboardComponent
+  },
+  {
+    path:'dashboardhome',
+    component:DashboardhomeComponent
+    
   },
 ]
 

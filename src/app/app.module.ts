@@ -86,8 +86,10 @@ import {
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
-  MatFormFieldModule,
+  MatFormFieldModule, 
 } from '@angular/material';
+import {BehaviorSubject} from 'rxjs';
+import {MatTreeNestedDataSource} from '@angular/material/tree';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -107,6 +109,8 @@ import { FormsModule,  } from '@angular/forms';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
 import { SettingsComponent } from './homepages/tailor-view/settings/settings.component';
 import { NotificationComponent } from './homepages/customer-view/notification/notification.component';
+import { DashboardComponent } from './homepages/customer-view/dashboard/dashboard.component';
+import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dashboardhome/dashboardhome.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -124,6 +128,8 @@ import { NotificationComponent } from './homepages/customer-view/notification/no
     ForgotComponent,
     SettingsComponent,
     NotificationComponent,
+    DashboardComponent,
+    DashboardhomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -206,10 +212,12 @@ import { NotificationComponent } from './homepages/customer-view/notification/no
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
-  MatFormFieldModule
+  MatFormFieldModule, 
   ],
   entryComponents: [],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { };
+
+platformBrowserDynamic().bootstrapModule(AppModule);
