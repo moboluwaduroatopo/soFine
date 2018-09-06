@@ -9,6 +9,9 @@ import { GuestDashComponent } from './guest-nav/guest-dash/guest-dash.component'
 import { LoginComponent } from './join-comp/login/login.component';
 import { RegComponent } from './join-comp/reg/reg.component';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
+import { SettingsComponent } from './homepages/tailor-view/settings/settings.component';
+import { NotificationComponent } from './homepages/customer-view/notification/notification.component';
+
 
 const appRoutes:Routes = [
   {
@@ -38,6 +41,14 @@ const appRoutes:Routes = [
   {
     path:'forgot',
      component:ForgotComponent
+  },
+  {
+    path:'settings',
+    component: SettingsComponent
+  },
+  {
+    path:'notifications',
+    component: NotificationComponent
   },
 ]
 
