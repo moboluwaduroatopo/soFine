@@ -106,6 +106,9 @@ import { LoginComponent } from './join-comp/login/login.component';
 import { RegComponent } from './join-comp/reg/reg.component';
 import { FormsModule,  } from '@angular/forms';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
+import { ProfileComponent } from './homepages/tailor-view/profile/profile.component';
+import { ClientComponent } from './homepages/tailor-view/client/client.component';
+import { DetailsComponent } from './homepages/tailor-view/details/details.component';
 import { MyServicesComponent } from './homepages/tailor-view/my-services/my-services.component';
 import { ManageComponent } from './homepages/tailor-view/manage/manage.component';
 import { ManageJobComponent } from './homepages/tailor-view/manage-job/manage-job.component';
@@ -124,6 +127,9 @@ import { ManageJobComponent } from './homepages/tailor-view/manage-job/manage-jo
     LoginComponent,
     RegComponent,
     ForgotComponent,
+    ProfileComponent,
+    ClientComponent,
+    DetailsComponent,
     MyServicesComponent,
     ManageComponent,
     ManageJobComponent,

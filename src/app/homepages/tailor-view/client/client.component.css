@@ -1,0 +1,31 @@
+nav
+{
+    border-bottom:1px solid #2AB967;
+    background-color: #2AB967;
+    color: white;
+    width:100%;
+    height: 5pc;
+}
+.example-card {
+  max-width: 400px;
+}
+
+#no {
+  width: 100px;
+  height: 100px;
+}
+
+ 
+
+#io{
+  width:92%;
+  border-radius:20px;
+  height: 7vh;
+}
+
+#p{
+  height: 7vh;
+}
+mat-card-title{
+  margin-top:30px;
+}
