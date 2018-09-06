@@ -105,6 +105,7 @@ import { LoginComponent } from './join-comp/login/login.component';
 import { RegComponent } from './join-comp/reg/reg.component';
 import { FormsModule,  } from '@angular/forms';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
+import { DashboardComponent } from './homepages/customer-view/dashboard/dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -120,6 +121,7 @@ import { ForgotComponent } from './join-comp/forgot/forgot.component';
     LoginComponent,
     RegComponent,
     ForgotComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
