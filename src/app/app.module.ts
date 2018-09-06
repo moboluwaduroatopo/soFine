@@ -45,6 +45,7 @@
 // } from '@angular/material';
 // import './polyfills';
 import { BrowserModule } from '@angular/platform-browser';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
 import {HttpClientModule} from '@angular/common/http';
@@ -108,6 +109,9 @@ import { ForgotComponent } from './join-comp/forgot/forgot.component';
 import { ProfileComponent } from './homepages/tailor-view/profile/profile.component';
 import { ClientComponent } from './homepages/tailor-view/client/client.component';
 import { DetailsComponent } from './homepages/tailor-view/details/details.component';
+import { MyServicesComponent } from './homepages/tailor-view/my-services/my-services.component';
+import { ManageComponent } from './homepages/tailor-view/manage/manage.component';
+import { ManageJobComponent } from './homepages/tailor-view/manage-job/manage-job.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -126,6 +130,9 @@ import { DetailsComponent } from './homepages/tailor-view/details/details.compon
     ProfileComponent,
     ClientComponent,
     DetailsComponent,
+    MyServicesComponent,
+    ManageComponent,
+    ManageJobComponent,
   ],
   imports: [
     BrowserModule,
