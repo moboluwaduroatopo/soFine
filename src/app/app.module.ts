@@ -86,8 +86,10 @@ import {
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
-  MatFormFieldModule,
+  MatFormFieldModule, 
 } from '@angular/material';
+import {BehaviorSubject} from 'rxjs';
+import {MatTreeNestedDataSource} from '@angular/material/tree';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -106,7 +108,10 @@ import { RegComponent } from './join-comp/reg/reg.component';
 import { FormsModule,  } from '@angular/forms';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
 import { InboxComponent } from './homepages/inbox/inbox.component';
-
+import { SettingsComponent } from './homepages/tailor-view/settings/settings.component';
+import { NotificationComponent } from './homepages/customer-view/notification/notification.component';
+import { DashboardComponent } from './homepages/customer-view/dashboard/dashboard.component';
+import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dashboardhome/dashboardhome.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -122,7 +127,11 @@ import { InboxComponent } from './homepages/inbox/inbox.component';
     LoginComponent,
     RegComponent,
     ForgotComponent,
-    InboxComponent
+    InboxComponent,
+    SettingsComponent,
+    NotificationComponent,
+    DashboardComponent,
+    DashboardhomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -205,10 +214,12 @@ import { InboxComponent } from './homepages/inbox/inbox.component';
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
-  MatFormFieldModule
+  MatFormFieldModule, 
   ],
   entryComponents: [],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { };
+
+platformBrowserDynamic().bootstrapModule(AppModule);
