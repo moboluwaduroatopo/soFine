@@ -9,6 +9,9 @@ import { GuestDashComponent } from './guest-nav/guest-dash/guest-dash.component'
 import { LoginComponent } from './join-comp/login/login.component';
 import { RegComponent } from './join-comp/reg/reg.component';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
+import { MyServicesComponent } from './homepages/tailor-view/my-services/my-services.component';
+import { ManageComponent } from './homepages/tailor-view/manage/manage.component';
+import { ManageJobComponent } from './homepages/tailor-view/manage-job/manage-job.component';
 
 const appRoutes:Routes = [
   {
@@ -39,6 +42,19 @@ const appRoutes:Routes = [
     path:'forgot',
      component:ForgotComponent
   },
+  {
+    path:'my-services',
+    component:MyServicesComponent
+  },
+  {
+    path:'manage',
+    component:ManageComponent
+  },
+  {
+    path:'job',
+    component:ManageJobComponent
+  },
+ 
 ]
 
 @NgModule({
