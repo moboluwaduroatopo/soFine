@@ -8,6 +8,9 @@ import { PrivacyComponent } from './guest-nav/privacy/privacy.component';
 import { GuestDashComponent } from './guest-nav/guest-dash/guest-dash.component';
 import { LoginComponent } from './join-comp/login/login.component';
 import { RegistrationComponent } from './join-comp/registration/registration.component';
+import { TailorViewComponent } from './homepages/tailor-view/tailor-view.component';
+import { TailorHomeComponent } from './homepages/tailor-view/tailor-home/tailor-home.component';
+
 
 const appRoutes:Routes = [
   {
@@ -23,12 +26,16 @@ const appRoutes:Routes = [
     component: SupportComponent
   },
   {
-    path:'privacy',
+    path:'policy',
     component: PrivacyComponent
   },
   {
     path:'login',
     component: LoginComponent
+  },
+  {
+    path:'tailor',
+    component: TailorViewComponent
   }
 ]
 

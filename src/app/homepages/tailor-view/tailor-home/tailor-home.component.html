@@ -1,55 +1,40 @@
-<nav class="navbar navbar-dark navbar-custom navbar-expand-sm fixed-top" id="nav">
-  <div class="container-fluid">
-    <a href="" class="navbar-brand" style="font-size:55px"><div>Beta</div></a>
-  </div>
-</nav>
-<nav class="navbar-default navbar-right" role="navigation">
-  <div class="sidebar-collapse">
-      <ul class="" id="">
-          <li>
-              <div class="img-responsive">
-                  <img src="assets/images/e.jpg" class="img-circle" width="50px"/>
-                </div>
-                  <div class="">
-                     
-                  <br />
-                  
-              </div>
-
-          </li>
-
-
-           <li>
-              <a class="" href="">Home</a>
-          </li>
-                  <li>
-                      <a href="">Inbox</a>
-                  </li>
-                  <li>
-                      <a href="">Notifications</a>
-                  </li>
-                  <li>
-                      <a href="">Catergories</a>
-                  </li>
-                   <li>
-                      <a href="">Tailors</a>
-                  </li>
-                   <li>
-                      <a href="">Make Special Request</a>
-                  </li>
-                  <li>
-                    <a href="">Support</a>
-                </li>
-                <li>
-                  <a href="">Online Status</a>
-                </li>
-              <li>
-                <a href="">Setting</a>
-            </li>
-      </ul>
-</div>
-</nav>
-<div class="container-fluid">
-
-
-</div>
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport="true">
+    <!-- <mat-toolbar color="">Menu</mat-toolbar> -->
+    <mat-nav-list>
+        <span><img src="src/assets/images/male.png" class="img-fluid rounded-circle"><br><b>corlard3y</b></span> <hr>    
+      <a mat-list-item href="#">Home</a>
+      <a mat-list-item href="#">Inbox</a>
+      <a mat-list-item href="#">Notifications</a>
+      <a mat-list-item href="#">Online Status<mat-slide-toggle></mat-slide-toggle> </a> <hr>
+      <a mat-list-item href="#">Manage Jobs</a>
+      <a mat-list-item href="#">My Clients</a>
+      <a mat-list-item href="#">My Services</a>
+      <a mat-list-item href="#">My profile</a> <hr>
+      <a mat-list-item href="#">Settings</a>
+      <a mat-list-item href="#">Support</a>
+      <a mat-list-item href="#">View as Client</a>
+      <a mat-list-item href="#">Logout</a>    
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="fixed-top" color="">
+      <button
+      type="button"
+      aria-label="Toggle sidenav"
+      mat-icon-button
+      (click)="drawer.toggle()">
+      <i class="fa fa-bars"></i>
+    </button>
+    <span class="beta">Beta</span>
+    </mat-toolbar>
+    <div>
+  <app-sidenav></app-sidenav>      
+    </div>
+  </mat-sidenav-content>
+  </mat-sidenav-container>
+  
+     

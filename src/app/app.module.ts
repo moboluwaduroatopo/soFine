@@ -54,6 +54,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { TailorHomeComponent } from './homepages/tailor-view/tailor-home/tailor-home.component';
 import { LoginComponent } from './join-comp/login/login.component';
 import { RegistrationComponent } from './join-comp/registration/registration.component';
+import { SidenavComponent } from './homepages/tailor-view/sidenav/sidenav.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,6 +69,7 @@ import { RegistrationComponent } from './join-comp/registration/registration.com
     TailorHomeComponent,
     LoginComponent,
     RegistrationComponent,
+    SidenavComponent,
   ],
   imports: [
     BrowserModule,
