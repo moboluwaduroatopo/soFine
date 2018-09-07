@@ -1,6 +1,6 @@
 header
 		{
-			background: url("src/assets/images/machine.png");
+			background-image: url('/assets/images/machine.png');
 			width: 100%;
 			height: 530px;
 			background-size: cover;
@@ -341,7 +341,7 @@ nav
     .nav{width:320px}
     header
     {
-        background: url("src/assets/images/machine375.png");
+        background-image: url('/assets/images/machine375.png');
         width: 320px;
         height: 530px;
         background-size: cover;
@@ -604,7 +604,7 @@ padding:10px;
 @media (max-width: 375px)and (min-width:350px) {
     header
 		{
-			background: url("src/assets/images/machine375.png");
+			background-image: url(/assets/images/machine375.png);
 			width: 100%;
 			height: 530px;
 			background-size: cover;
@@ -867,7 +867,7 @@ padding:10px;
 @media (max-width:430px) and (min-width:410px) {
     header
     {
-        background: url("src/assets/images/machine375.png");
+        background-image: url(/assets/images/machine375.png);
         width: 100%;
         height: 530px;
         background-size: cover;
@@ -1131,7 +1131,7 @@ padding:10px;
 @media (max-width: 770px) and (min-width:760px) {
     header
     {
-        background: url("src/assets/images/machine768.png");
+        background-image: url('/assets/images/machine768.png');
         width: 100%;
         height: 530px;
         background-size: cover;
@@ -1178,7 +1178,7 @@ padding:10px;
        top:125px;left:200px;
        width:100px;
     }
-   
+    .fa-search{display: none;}   
     .txt-cen
     {
         width:30%;
@@ -1385,7 +1385,7 @@ padding:10px;
     .navbar-brand{margin-right: 250px}     
     header
     {
-        background: url("src/assets/images/machine1024.png");
+        background-image: url('/assets/images/machine1024.png');
         width: 100%;
         height: 530px;
         background-size: cover;
@@ -1424,6 +1424,7 @@ padding:10px;
       width:100px;       
         
     }
+    .fa-search{display: none;}       
    
     .txt-cen
     {

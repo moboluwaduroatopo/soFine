@@ -1,6 +1,56 @@
+// import { NgModule } from '@angular/core';
+// import { BrowserModule } from '@angular/platform-browser';
+// import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+// import {CdkTableModule} from '@angular/cdk/table';
+// import {CdkTreeModule} from '@angular/cdk/tree';
+// import {HttpClientModule} from '@angular/common/http';
+// // import './polyfills';
+// import {
+//   MatAutocompleteModule,
+//   MatBadgeModule,
+//   MatBottomSheetModule,
+//   MatButtonModule,
+//   MatButtonToggleModule,
+//   MatCardModule,
+//   MatCheckboxModule,
+//   MatChipsModule,
+//   MatDatepickerModule,
+//   MatDialogModule,
+//   MatDividerModule,
+//   MatExpansionModule,
+//   MatGridListModule,
+//   MatIconModule,
+//   MatInputModule,
+//   MatListModule,
+//   MatMenuModule,
+//   MatNativeDateModule,
+//   MatPaginatorModule,
+//   MatProgressBarModule,
+//   MatProgressSpinnerModule,
+//   MatRadioModule,
+//   MatRippleModule,
+//   MatSelectModule,
+//   MatSidenavModule,
+//   MatSliderModule,
+//   MatSlideToggleModule,
+//   MatSnackBarModule,
+//   MatSortModule,
+//   MatStepperModule,
+//   MatTableModule,
+//   MatTabsModule,
+//   MatToolbarModule,
+//   MatTooltipModule,
+//   MatTreeModule,
+//   MatFormFieldModule
+// } from '@angular/material';
+// import './polyfills';
 import { BrowserModule } from '@angular/platform-browser';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import {CdkTableModule} from '@angular/cdk/table';
+import {CdkTreeModule} from '@angular/cdk/tree';
+import {HttpClientModule} from '@angular/common/http';
+import {NgModule} from '@angular/core';
+import { ReactiveFormsModule} from '@angular/forms';
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -37,11 +87,11 @@ import {
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
+  MatFormFieldModule,
 } from '@angular/material';
-import { NgModule } from '@angular/core';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GuestNavComponent } from './guest-nav/guest-nav.component';
 import { JoinCompComponent } from './join-comp/join-comp.component';
 import { CustomerViewComponent } from './homepages/customer-view/customer-view.component';
@@ -53,8 +103,19 @@ import { GuestDashComponent } from './guest-nav/guest-dash/guest-dash.component'
 import { AppRoutingModule } from './/app-routing.module';
 import { TailorHomeComponent } from './homepages/tailor-view/tailor-home/tailor-home.component';
 import { LoginComponent } from './join-comp/login/login.component';
-import { RegistrationComponent } from './join-comp/registration/registration.component';
 import { SidenavComponent } from './homepages/tailor-view/sidenav/sidenav.component';
+import { RegComponent } from './join-comp/reg/reg.component';
+import { FormsModule,  } from '@angular/forms';
+import { ForgotComponent } from './join-comp/forgot/forgot.component';
+import { ProfileComponent } from './homepages/tailor-view/profile/profile.component';
+import { ClientComponent } from './homepages/tailor-view/client/client.component';
+import { DetailsComponent } from './homepages/tailor-view/details/details.component';
+import { MyServicesComponent } from './homepages/tailor-view/my-services/my-services.component';
+import { ManageComponent } from './homepages/tailor-view/manage/manage.component';
+import { ManageJobComponent } from './homepages/tailor-view/manage-job/manage-job.component';
+import { EarningComponent } from './homepages/tailor-view/earning/earning.component';
+import { DashboardSupportComponent } from './homepages/tailor-view/dashboard-support/dashboard-support.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,8 +129,17 @@ import { SidenavComponent } from './homepages/tailor-view/sidenav/sidenav.compon
     GuestDashComponent,
     TailorHomeComponent,
     LoginComponent,
-    RegistrationComponent,
-    SidenavComponent,
+    RegComponent,
+    ForgotComponent,
+    ProfileComponent,
+    ClientComponent,
+    DetailsComponent,
+    MyServicesComponent,
+    ManageComponent,
+    ManageJobComponent,
+    EarningComponent,
+    DashboardSupportComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
@@ -109,7 +179,50 @@ import { SidenavComponent } from './homepages/tailor-view/sidenav/sidenav.compon
   MatTabsModule,
   MatToolbarModule,
   MatTooltipModule,
-  MatTreeModule
+  MatTreeModule,
+  MatFormFieldModule,
+  FormsModule
+  ],
+  exports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+     MatAutocompleteModule,
+  MatBadgeModule,
+  MatBottomSheetModule,
+  MatButtonModule,
+  MatButtonToggleModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatChipsModule,
+  MatDatepickerModule,
+  MatDialogModule,
+  MatDividerModule,
+  MatExpansionModule,
+  MatGridListModule,
+  MatIconModule,
+  MatInputModule,
+  MatListModule,
+  MatMenuModule,
+  MatNativeDateModule,
+  MatPaginatorModule,
+  MatProgressBarModule,
+  MatProgressSpinnerModule,
+  MatRadioModule,
+  MatRippleModule,
+  MatSelectModule,
+  MatSidenavModule,
+  MatSliderModule,
+  MatSlideToggleModule,
+  MatSnackBarModule,
+  MatSortModule,
+  MatStepperModule,
+  MatTableModule,
+  MatTabsModule,
+  MatToolbarModule,
+  MatTooltipModule,
+  MatTreeModule,
+  MatFormFieldModule
   ],
   entryComponents: [],
   providers: [],
