@@ -87,8 +87,10 @@ import {
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
-  MatFormFieldModule,
+  MatFormFieldModule, 
 } from '@angular/material';
+import {BehaviorSubject} from 'rxjs';
+import {MatTreeNestedDataSource} from '@angular/material/tree';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -116,6 +118,9 @@ import { ManageJobComponent } from './homepages/tailor-view/manage-job/manage-jo
 import { EarningComponent } from './homepages/tailor-view/earning/earning.component';
 import { DashboardSupportComponent } from './homepages/tailor-view/dashboard-support/dashboard-support.component';
 
+import { NotificationComponent } from './homepages/customer-view/notification/notification.component';
+import { DashboardComponent } from './homepages/customer-view/dashboard/dashboard.component';
+import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dashboardhome/dashboardhome.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -140,6 +145,9 @@ import { DashboardSupportComponent } from './homepages/tailor-view/dashboard-sup
     EarningComponent,
     DashboardSupportComponent,
     SidenavComponent
+    NotificationComponent,
+    DashboardComponent,
+    DashboardhomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -222,10 +230,13 @@ import { DashboardSupportComponent } from './homepages/tailor-view/dashboard-sup
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
-  MatFormFieldModule
+  MatFormFieldModule, 
   ],
   entryComponents: [],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export class AppModule { };
+
+platformBrowserDynamic().bootstrapModule(AppModule);

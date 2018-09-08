@@ -20,6 +20,9 @@ import { ManageJobComponent } from './homepages/tailor-view/manage-job/manage-jo
 import { EarningComponent } from './homepages/tailor-view/earning/earning.component';
 import { DashboardSupportComponent } from './homepages/tailor-view/dashboard-support/dashboard-support.component';
 
+import { NotificationComponent } from './homepages/customer-view/notification/notification.component';
+import { DashboardComponent } from './homepages/customer-view/dashboard/dashboard.component';
+import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dashboardhome/dashboardhome.component';
 const appRoutes:Routes = [
   {
     path:'',
@@ -78,6 +81,22 @@ const appRoutes:Routes = [
     component:ManageJobComponent
   },
  
+    path:'settings',
+    component: SettingsComponent
+  },
+  {
+    path:'notifications',
+    component: NotificationComponent
+  },
+  {
+    path:'dashboard',
+     component:DashboardComponent
+  },
+  {
+    path:'dashboardhome',
+    component:DashboardhomeComponent
+    
+  },
 ]
 
 @NgModule({
