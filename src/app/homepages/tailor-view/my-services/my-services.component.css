@@ -1,0 +1,24 @@
+.container-fluid
+{
+    margin-top: 5pc;
+}
+mat-card
+{
+  height: 75px;
+  margin-top: 3px;margin-bottom: 3px;background-color:#FCFCFB;
+}
+mat-card:hover
+{
+  background-color: #ededed;
+}
+
+ mat-card-title {
+     font-size: 20px;
+   }
+.fa-chevron-right
+   {
+     position: absolute;
+     left:93%;
+     color: #2ab967;
+     float: right;
+   }
