@@ -51,9 +51,19 @@
   body{
     background-color: aqua;
   } */
+  h2{
+    color:black;
+    font-size: 30px;
+    font-weight: bold;
+  }
   .beta{
-    background-color:#2AB967;
+    background-color:#F5F5F5;
     color: aliceblue;
+  }
+  .beta1{
+    background-color: #2AB967;
+    font-weight: bold;
+    color: aliceblue; 
   }
   .sidenav-container{
     height: 100%;

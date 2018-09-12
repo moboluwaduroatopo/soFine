@@ -49,7 +49,8 @@ import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
 import {HttpClientModule} from '@angular/common/http';
 import {NgModule} from '@angular/core';
-import { ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule,} from '@angular/forms'
+
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -167,7 +168,11 @@ import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dash
   MatTooltipModule,
   MatTreeModule,
   MatFormFieldModule,
-  FormsModule
+  FormsModule,
+  BrowserModule,
+  FormsModule,
+  ReactiveFormsModule,
+  HttpClientModule,
   ],
   exports: [
     BrowserModule,
@@ -208,7 +213,11 @@ import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dash
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
-  MatFormFieldModule, 
+  MatFormFieldModule,
+  BrowserModule,
+  FormsModule,
+  ReactiveFormsModule,
+  HttpClientModule,
   ],
   entryComponents: [],
   providers: [],
