@@ -1,5 +1,5 @@
 
-import { Detail } from './details';
+import { Details } from './details';
 
 export const LOGINS: Details[] = [
     {fullname: "Olarinde Delight", description:"", language:"Yoruba", country:"Nigeria", state:"oyo state", city:"lalupon", username:"ddd", category:"hair dresser", email: "delightolarinde@gmail.com", password:"delight"},

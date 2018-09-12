@@ -32,6 +32,10 @@ const appRoutes:Routes = [
     component: GuestDashComponent
   },
   {
+    path:'dashboard',
+     component:DashboardComponent
+  },
+  {
     path:'about',
     component: AboutComponent
   },
@@ -96,10 +100,6 @@ const appRoutes:Routes = [
     component: NotificationComponent
   },
   {
-    path:'dashboard',
-     component:DashboardComponent
-  },
-  {
     path:'dashboardhome',
     component:DashboardhomeComponent
     
@@ -112,7 +112,8 @@ const appRoutes:Routes = [
 
 @NgModule({
   imports: [
-    CommonModule,RouterModule.forRoot(appRoutes)
+    CommonModule,
+    RouterModule.forRoot(appRoutes)
   ],
   exports:[ RouterModule ]
   })
