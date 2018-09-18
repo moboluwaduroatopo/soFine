@@ -18,10 +18,10 @@ export class LoginComponent implements OnInit {
   submit(form){
     this.wait = true
     setTimeout(()=>{
-        alert('Email is ${form.value.email} and password is ${form.value.password}');
+        //alert('Email is ${form.value.email} and password is ${form.value.password}');
         this.wait = false
     },1000)
-  }
+  };
   datas;
 email="";
 password="";
@@ -37,7 +37,7 @@ test=[];
 
    for (let i = 0; i < this.datas.length; i++) {
    if(this.email == this.datas[i].email && this.password == this.datas[i].password){
-    // this.router.navigate(['tailor']);
+    this.router.navigate(['dashboard']);
     alert("Welcome " + this.datas[i].fullname);
     // this.serve.getUser(this.datas)
 
