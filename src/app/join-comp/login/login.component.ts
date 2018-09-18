@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Details } from 'c:/users/user/sofine/src/app/details';
+import { Details } from 'c:/users/seyi_lowo/sofine/src/app/details';
 //import { LOGINS} from 'c:/users/user/sofine/src/app/mock-details';
-import { DatasetService } from 'c:/users/user/sofine/src/app/dataset.service';
+import { DatasetService } from 'c:/users/seyi_lowo/sofine/src/app/dataset.service';
 
 
 

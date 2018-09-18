@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import { DatasetService } from 'c:/users/user/sofine/src/app/dataset.service';
-import { Details } from 'c:/users/user/sofine/src/app/./details';
+import { DatasetService } from 'c:/users/seyi_lowo/sofine/src/app/dataset.service';
+import { Details } from 'c:/users/seyi_lowo/sofine/src/app/./details';
 
 @Component({
   selector: 'app-reg',
