@@ -26,6 +26,11 @@ import { ChatboxComponent } from './homepages/customer-view/inbox/chatbox/chatbo
 import { NotificationComponent } from './homepages/customer-view/notification/notification.component';
 import { DashboardComponent } from './homepages/customer-view/dashboard/dashboard.component';
 import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dashboardhome/dashboardhome.component';
+
+import { CategoriesComponent } from './homepages/customer-view/categories/categories.component';
+import { FabricsComponent } from './homepages/customer-view/categories/fabrics/fabrics.component';
+import { DenimComponent } from './homepages/customer-view/categories/fabrics/denim/denim.component';
+
 const appRoutes:Routes = [
   {
     path:'',
@@ -107,6 +112,18 @@ const appRoutes:Routes = [
   {
     path:'chat',
      component:ChatboxComponent
+  },
+  {
+    path:'categories',
+     component:CategoriesComponent
+  },
+  {
+    path:'fabrics',
+     component:FabricsComponent
+  },
+  {
+    path:'denim',
+     component:DenimComponent
   },
 ]
 

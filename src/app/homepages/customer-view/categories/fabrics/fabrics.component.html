@@ -1,7 +1,7 @@
-<div class="container">
+<div  *ngIf="fabrics" class="container">
   <div class="row">
     <div class="header header1">
-      <span><a href="">Home</a> > </span><span><a href="categories">Categories</a></span> > <span><a href="categories/fabrics">Fabrics</a></span>
+      <span><a (click)="menu('dashboard')">Home</a> > </span><span><a (click)="menu('categories')">Categories</a></span> > <span><a (click)="menu('fabrics')">Fabrics</a></span>
       <br /><br />
       <h1 class="text-center">Fabrics</h1>
       <h6 class="text-center">In need of lovely fabrics and materials for your designs? Pick your choice!</h6>
@@ -116,7 +116,7 @@
         </a>
       </div>
       <div class="col-md-3 col-sm-6">
-        <a href="categories/fabrics/denim">
+        <a (click)="menu('denim')">
           <div class="card mx-auto text-white text-center">
             <img src="src/assets/images/categories/den.jpg" alt="" class="card-img-top image-fluid">
             <div class="card-body">
@@ -223,3 +223,15 @@
       </div>
     </div>
 </div>
+
+<div *ngIf="denim">
+  <app-denim></app-denim>     
+</div> 
+
+<div *ngIf="dashboard">
+    <app-dashboardhome></app-dashboardhome>     
+</div>
+
+<div *ngIf="categories">
+    <app-categories></app-categories>     
+  </div>
