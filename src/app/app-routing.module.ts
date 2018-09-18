@@ -23,7 +23,7 @@ import { DashboardSupportComponent } from './homepages/tailor-view/dashboard-sup
 const appRoutes:Routes = [
   {
     path:'',
-    component: GuestDashComponent
+    component: GuestNavComponent
   },
   {
     path:'about',
