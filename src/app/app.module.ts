@@ -126,6 +126,10 @@ import { DashboardComponent } from './homepages/customer-view/dashboard/dashboar
 import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dashboardhome/dashboardhome.component';
 import { ChatboxComponent } from './homepages/customer-view/inbox/chatbox/chatbox.component';
 import { DatasetService } from './dataset.service';
+
+import { CategoriesComponent } from './homepages/customer-view/categories/categories.component';
+import { FabricsComponent } from './homepages/customer-view/categories/fabrics/fabrics.component';
+import { DenimComponent } from './homepages/customer-view/categories/fabrics/denim/denim.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -156,6 +160,9 @@ import { DatasetService } from './dataset.service';
     DashboardComponent,
     DashboardhomeComponent,
     ChatboxComponent,
+    CategoriesComponent,
+    FabricsComponent,
+    DenimComponent,
   ],
   imports: [
     BrowserModule,

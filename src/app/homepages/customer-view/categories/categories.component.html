@@ -1,7 +1,7 @@
-<div class="container">
+<div  *ngIf="categories" class="container">
   <div class="row">
     <div class="header header1">
-      <span><a href="">Home</a> > </span><span><a href="categories">Categories</a></span>
+      <span><a (click)="menu('dashboard')">Home</a> > </span><span><a (click)="menu('categories')">Categories</a></span>
       <br /><br />
       <h1 class="text-center">Categories</h1>
       <h6 class="text-center">Need to get something done? Take a look at these categories.</h6>
@@ -71,7 +71,7 @@
         </a>
       </div>
       <div class="col-md-3 col-sm-6">
-        <a href="categories/fabrics">
+        <a (click)="menu('fabrics')">
           <div class="card mx-auto text-white text-center">
             <img src="src/assets/images/categories/f.jpg" alt="" class="card-img-top image-fluid">
             <div class="card-body">
@@ -92,4 +92,10 @@
       </div>
     <!-- </div> -->
   </div>
+</div>
+<div *ngIf="fabrics">
+  <app-fabrics></app-fabrics>     
+</div>
+<div *ngIf="dashboard">
+    <app-dashboardhome></app-dashboardhome>     
 </div>

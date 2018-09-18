@@ -36,12 +36,13 @@
           <mat-icon matSuffix (click)="hide = '!hide'">{{hide ? 'visibility': 'visibility_off'}}</mat-icon>
         </mat-form-field><br>
       
-        <button (click)="processLogin()" mat-raised-button type="submit" color="accent" [disabled]="!myform.form.valid" style="width:70%"><a href="dashboard">submit</a></button><br>
+        <button (click)="processLogin()" mat-raised-button type="submit" color="accent" [disabled]="!myform.form.valid" style="width:70%"><a routerLink='/dashboard'>submit</a></button><br>
           <a href="forgot" style="font-size: 15px;font-weight: bold;color:#2AB967;text-decoration:none;">Forgot password?</a>
       </form>
     </mat-card>
 
    </div>
+   <router-outlet></router-outlet>
 
    <!-- <div *ngFor = "data of datas">
       <p>{{ data[i].email }} and {{ data[i].password }}</p>
