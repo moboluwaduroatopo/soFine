@@ -45,6 +45,7 @@
 // } from '@angular/material';
 // import './polyfills';
 import { BrowserModule } from '@angular/platform-browser';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
 import {HttpClientModule} from '@angular/common/http';
@@ -105,11 +106,26 @@ import { GuestDashComponent } from './guest-nav/guest-dash/guest-dash.component'
 import { AppRoutingModule } from './/app-routing.module';
 import { TailorHomeComponent } from './homepages/tailor-view/tailor-home/tailor-home.component';
 import { LoginComponent } from './join-comp/login/login.component';
+import { SidenavComponent } from './homepages/tailor-view/sidenav/sidenav.component';
 import { RegComponent } from './join-comp/reg/reg.component';
 import { FormsModule,  } from '@angular/forms';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
+import { InboxComponent } from './homepages/customer-view/inbox/inbox.component';
+import { SettingsComponent } from './homepages/tailor-view/settings/settings.component';
+import { ProfileComponent } from './homepages/tailor-view/profile/profile.component';
+import { ClientComponent } from './homepages/tailor-view/client/client.component';
+import { DetailsComponent } from './homepages/tailor-view/details/details.component';
+import { MyServicesComponent } from './homepages/tailor-view/my-services/my-services.component';
+import { ManageComponent } from './homepages/tailor-view/manage/manage.component';
+import { ManageJobComponent } from './homepages/tailor-view/manage-job/manage-job.component';
+import { EarningComponent } from './homepages/tailor-view/earning/earning.component';
+import { DashboardSupportComponent } from './homepages/tailor-view/dashboard-support/dashboard-support.component';
+
+import { NotificationComponent } from './homepages/customer-view/notification/notification.component';
 import { DashboardComponent } from './homepages/customer-view/dashboard/dashboard.component';
 import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dashboardhome/dashboardhome.component';
+import { ChatboxComponent } from './homepages/customer-view/inbox/chatbox/chatbox.component';
+import { DatasetService } from './dataset.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -125,8 +141,21 @@ import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dash
     LoginComponent,
     RegComponent,
     ForgotComponent,
+    InboxComponent,
+    SettingsComponent,
+    ProfileComponent,
+    ClientComponent,
+    DetailsComponent,
+    MyServicesComponent,
+    ManageComponent,
+    ManageJobComponent,
+    EarningComponent,
+    DashboardSupportComponent,
+    SidenavComponent,
+    NotificationComponent,
     DashboardComponent,
     DashboardhomeComponent,
+    ChatboxComponent,
   ],
   imports: [
     BrowserModule,
@@ -220,7 +249,7 @@ import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dash
   HttpClientModule,
   ],
   entryComponents: [],
-  providers: [],
+  providers: [DatasetService],
   bootstrap: [AppComponent]
 })
 export class AppModule { };

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { DatasetService } from 'c:/users/user/sofine/src/app/dataset.service';
 
 @Component({
   selector: 'app-reg',
@@ -10,6 +11,10 @@ export class RegComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
   isEditable = false;
+  first ='';
+  last='';
+  countrt=''; 
+  state=''; 
   constructor() { }
 
   ngOnInit() {
