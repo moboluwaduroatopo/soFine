@@ -26,6 +26,10 @@ LOGINS = [
     return (this.LOGINS);
   }
 
+  getUser(){
+
+  }
+
   
 
 //   manage(): Observable<Details[]>{

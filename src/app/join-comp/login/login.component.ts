@@ -14,12 +14,20 @@ import { DatasetService } from 'c:/users/user/sofine/src/app/dataset.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  wait:boolean = false;
+  submit(form){
+    this.wait = true
+    setTimeout(()=>{
+        alert('Email is ${form.value.email} and password is ${form.value.password}');
+        this.wait = false
+    },1000)
+  }
   datas;
 email="";
 password="";
 test=[];
   constructor(private serve:DatasetService, private router:Router ) {
-    this.datas=this.serve.processLogin()
+    this.datas=this.serve.processLogin();
    }
  
   ngOnInit() {

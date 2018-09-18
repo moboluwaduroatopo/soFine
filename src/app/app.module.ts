@@ -50,7 +50,8 @@ import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
 import {HttpClientModule} from '@angular/common/http';
 import {NgModule} from '@angular/core';
-import { ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule,} from '@angular/forms'
+
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -196,7 +197,11 @@ import { DatasetService } from './dataset.service';
   MatTooltipModule,
   MatTreeModule,
   MatFormFieldModule,
-  FormsModule
+  FormsModule,
+  BrowserModule,
+  FormsModule,
+  ReactiveFormsModule,
+  HttpClientModule,
   ],
   exports: [
     BrowserModule,
@@ -237,7 +242,11 @@ import { DatasetService } from './dataset.service';
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
-  MatFormFieldModule, 
+  MatFormFieldModule,
+  BrowserModule,
+  FormsModule,
+  ReactiveFormsModule,
+  HttpClientModule,
   ],
   entryComponents: [],
   providers: [DatasetService],
