@@ -11,6 +11,8 @@ import { TailorViewComponent } from './homepages/tailor-view/tailor-view.compone
 import { TailorHomeComponent } from './homepages/tailor-view/tailor-home/tailor-home.component';
 import { RegComponent } from './join-comp/reg/reg.component';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
+import { InboxComponent } from './homepages/customer-view/inbox/inbox.component';
+import { SettingsComponent } from './homepages/tailor-view/settings/settings.component';
 import { ProfileComponent } from './homepages/tailor-view/profile/profile.component';
 import { ClientComponent } from './homepages/tailor-view/client/client.component';
 import { DetailsComponent } from './homepages/tailor-view/details/details.component';
@@ -19,14 +21,24 @@ import { ManageComponent } from './homepages/tailor-view/manage/manage.component
 import { ManageJobComponent } from './homepages/tailor-view/manage-job/manage-job.component';
 import { EarningComponent } from './homepages/tailor-view/earning/earning.component';
 import { DashboardSupportComponent } from './homepages/tailor-view/dashboard-support/dashboard-support.component';
+import { ChatboxComponent } from './homepages/customer-view/inbox/chatbox/chatbox.component';
 
 import { NotificationComponent } from './homepages/customer-view/notification/notification.component';
 import { DashboardComponent } from './homepages/customer-view/dashboard/dashboard.component';
 import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dashboardhome/dashboardhome.component';
+
+import { CategoriesComponent } from './homepages/customer-view/categories/categories.component';
+import { FabricsComponent } from './homepages/customer-view/categories/fabrics/fabrics.component';
+import { DenimComponent } from './homepages/customer-view/categories/fabrics/denim/denim.component';
+
 const appRoutes:Routes = [
   {
     path:'',
     component: GuestDashComponent
+  },
+  {
+    path:'dashboard',
+     component:DashboardComponent
   },
   {
     path:'about',
@@ -57,6 +69,10 @@ const appRoutes:Routes = [
      component:ForgotComponent
   },
   {
+    path:'inbox',
+     component:InboxComponent
+  },
+  {
     path:'profile',
     component: ProfileComponent
   },
@@ -80,7 +96,7 @@ const appRoutes:Routes = [
     path:'job',
     component:ManageJobComponent
   },
- 
+{
     path:'settings',
     component: SettingsComponent
   },
@@ -89,19 +105,32 @@ const appRoutes:Routes = [
     component: NotificationComponent
   },
   {
-    path:'dashboard',
-     component:DashboardComponent
-  },
-  {
     path:'dashboardhome',
     component:DashboardhomeComponent
     
+  },
+  {
+    path:'chat',
+     component:ChatboxComponent
+  },
+  {
+    path:'categories',
+     component:CategoriesComponent
+  },
+  {
+    path:'fabrics',
+     component:FabricsComponent
+  },
+  {
+    path:'denim',
+     component:DenimComponent
   },
 ]
 
 @NgModule({
   imports: [
-    CommonModule,RouterModule.forRoot(appRoutes)
+    CommonModule,
+    RouterModule.forRoot(appRoutes)
   ],
   exports:[ RouterModule ]
   })

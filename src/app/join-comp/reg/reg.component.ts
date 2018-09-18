@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { DatasetService } from 'c:/users/seyi_lowo/sofine/src/app/dataset.service';
+import { Details } from 'c:/users/seyi_lowo/sofine/src/app/./details';
 
 @Component({
   selector: 'app-reg',
@@ -10,10 +12,24 @@ export class RegComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
   isEditable = false;
-  constructor() { }
+  frist ='';
+  last='';
+  country=''; 
+  state=''; 
+  email= '';
+  password= '';
 
-  ngOnInit() {
-    
+  constructor(private serve:DatasetService) { }
+
+  ngOnInit() { }
+
+  firstSubmit(): void{
+    const regData= {
+      email: this.email,
+      password: this.password
+    }
+      this.serve.sendSubmit(regData);
+     
+    };
   }
 
-}
