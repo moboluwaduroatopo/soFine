@@ -50,7 +50,8 @@ import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
 import {HttpClientModule} from '@angular/common/http';
 import {NgModule} from '@angular/core';
-import { ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule,} from '@angular/forms'
+
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -109,7 +110,7 @@ import { SidenavComponent } from './homepages/tailor-view/sidenav/sidenav.compon
 import { RegComponent } from './join-comp/reg/reg.component';
 import { FormsModule,  } from '@angular/forms';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
-import { InboxComponent } from './homepages/inbox/inbox.component';
+import { InboxComponent } from './homepages/customer-view/inbox/inbox.component';
 import { SettingsComponent } from './homepages/tailor-view/settings/settings.component';
 import { ProfileComponent } from './homepages/tailor-view/profile/profile.component';
 import { ClientComponent } from './homepages/tailor-view/client/client.component';
@@ -123,6 +124,8 @@ import { DashboardSupportComponent } from './homepages/tailor-view/dashboard-sup
 import { NotificationComponent } from './homepages/customer-view/notification/notification.component';
 import { DashboardComponent } from './homepages/customer-view/dashboard/dashboard.component';
 import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dashboardhome/dashboardhome.component';
+import { ChatboxComponent } from './homepages/customer-view/inbox/chatbox/chatbox.component';
+import { DatasetService } from './dataset.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -152,6 +155,7 @@ import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dash
     NotificationComponent,
     DashboardComponent,
     DashboardhomeComponent,
+    ChatboxComponent,
   ],
   imports: [
     BrowserModule,
@@ -193,7 +197,11 @@ import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dash
   MatTooltipModule,
   MatTreeModule,
   MatFormFieldModule,
-  FormsModule
+  FormsModule,
+  BrowserModule,
+  FormsModule,
+  ReactiveFormsModule,
+  HttpClientModule,
   ],
   exports: [
     BrowserModule,
@@ -234,10 +242,14 @@ import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dash
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
-  MatFormFieldModule, 
+  MatFormFieldModule,
+  BrowserModule,
+  FormsModule,
+  ReactiveFormsModule,
+  HttpClientModule,
   ],
   entryComponents: [],
-  providers: [],
+  providers: [DatasetService],
   bootstrap: [AppComponent]
 })
 export class AppModule { };
