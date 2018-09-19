@@ -1,108 +1,83 @@
-<mat-sidenav-container class="sidenav-container" id="sidenav-container">
-    <mat-sidenav
-    #drawer
-    class="sidenav" id="sidenav"
-    fixedInViewport="true">
-    <!-- <mat-toolbar color="">Menu</mat-toolbar> -->
-    <mat-nav-list>
-        <span><img src="src/assets/images/male.png" class="img-fluid rounded-circle"><br><b>corlard3y</b></span> <hr>    
-      <a mat-list-item  routerLink="/tailor">Home</a>
-      <a mat-list-item href="#">Inbox</a>
-      <a mat-list-item href="#">Notifications</a>
-      <a mat-list-item href="#">Online Status<mat-slide-toggle></mat-slide-toggle> </a> <hr>
-      <a mat-list-item routerLink="/tailor">Manage Jobs</a>
-      <a mat-list-item routerLink="/tailor">My Clients</a>
-      <a mat-list-item routerLink="/tailor">My Earnings</a>
-      <a mat-list-item routerLink="/tailor">My Services</a><hr>
-      <a mat-list-item routerLink="/tailor">My profile</a> 
-      <a mat-list-item routerLink="/tailor">Support</a>
-      <a mat-list-item href="#">View as Client</a>
-      <a mat-list-item href="">Logout</a>    
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar class="fixed-top" color="">
-      <button
-      type="button"
-      aria-label="Toggle sidenav"
-      mat-icon-button
-      (click)="drawer.toggle()">
-      <i class="fa fa-bars"></i>
-    </button>
-    <span class="beta">Beta</span>
-    </mat-toolbar>
-
-
-<div class="container form-search">
-    <span class="input-group">
-        <span class="input-group-addon"><button class="btn-search"><i class="fa fa-search"></i></button><input type="text" placeholder="search anything..." class="search"></span>
-     </span>
-  </div>
-<div class="container all">
-      <mat-card>
-          <div class="row">
-            <div class="col-md-6">
-                    <img src="src/assets/images/male.png"class="img-fluid rounded-circle"> 
-            </div>
-            <div class="col-md-6">
-               <span class="full-cli"><b>Client Details</b></span>
-               <div>Fullname<span>Delight delight</span></div>
-               <hr>
-               <div>Username<span>Delight99</span></div>
-               <hr>
-               <div>Email<span>Delight@gmail.com</span></div>
-               <hr>
-               <div>Phone Number<span>08012345678</span></div>
-               <hr>
-               <div>Address<span>Pako street,Illy</span></div>
-               <hr>
-            </div>       
-           </div>      
-      </mat-card>
+<div *ngIf="detailall">
+    <div class="container form-search">
+        <span class="input-group">
+            <span class="input-group-addon"><button class="btn-search"><i class="fa fa-search"></i></button><input type="text" placeholder="search anything..." class="search"></span>
+         </span>
       </div>
-<mat-tab-group color="accent">
-    <mat-tab label="All jobs"> 
-        <div class="container">
-        <div class="row">
-        <div class="col-md-4">
+      <div class="container head">
+        <span><a (click)="changeit('cli')">Clients</a></span> > <span><a >Details</a></span>
+      </div>
+      <div class="container all">
+          <mat-card>
+              <div class="row">
+                <div class="col-md-6">
+                        <img src="src/assets/images/male.png"class="img-fluid rounded-circle"> 
+                </div>
+                <div class="col-md-6">
+                   <span class="full-cli"><b>Client Details</b></span>
+                   <div>Fullname<span>Delight delight</span></div>
+                   <hr>
+                   <div>Username<span>Delight99</span></div>
+                   <hr>
+                   <div>Email<span>Delight@gmail.com</span></div>
+                   <hr>
+                   <div>Phone Number<span>08012345678</span></div>
+                   <hr>
+                   <div>Address<span>Pako street,Illy</span></div>
+                   <hr>
+                </div>       
+               </div>      
+          </mat-card>
+          </div>
+      <mat-tab-group color="accent">
+        <mat-tab label="All jobs"> 
+            <div class="container">
+            <div class="row">
+            <div class="col-md-4">
+                    <div class="card" >
+                      <img class="card-img-top" src="src/assets/images/e.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title">Job Description</h4>
+                        <p class="card-text">3-piece Suit</p>
+                      </div>
+                    </div>
+            </div>
+            <div class="col-md-4">
                 <div class="card" >
-                  <img class="card-img-top" src="src/assets/images/e.jpg">
-                  <div class="card-body">
-                    <h4 class="card-title">Job Description</h4>
-                    <p class="card-text">3-piece Suit</p>
+                    <img class="card-img-top" src="src/assets/images/e.jpg">
+                    <div class="card-body">
+                      <h4 class="card-title">Job Description</h4>
+                      <p class="card-text">Suit Jacket</p>
+                      
+                    </div>
                   </div>
-                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" >
+                    <img class="card-img-top" src="src/assets/images/e.jpg">
+                    <div class="card-body">
+                      <h4 class="card-title">Job Description</h4>
+                      <p class="card-text">Suit Pants</p>
+                   
+                    </div>
+                  </div>
+            </div>
         </div>
-        <div class="col-md-4">
-            <div class="card" >
-                <img class="card-img-top" src="src/assets/images/e.jpg">
-                <div class="card-body">
-                  <h4 class="card-title">Job Description</h4>
-                  <p class="card-text">Suit Jacket</p>
-                  
-                </div>
-              </div>
         </div>
-        <div class="col-md-4">
-            <div class="card" >
-                <img class="card-img-top" src="src/assets/images/e.jpg">
-                <div class="card-body">
-                  <h4 class="card-title">Job Description</h4>
-                  <p class="card-text">Suit Pants</p>
-               
-                </div>
-              </div>
-        </div>
-    </div>
-    </div>
-            
-     </mat-tab>
-    <mat-tab label="Pending">
-      <div class="text-center"><b>No Pending Job</b></div>
-    </mat-tab>
-   
-  </mat-tab-group>
+                
+         </mat-tab>
+        <mat-tab label="Pending">
+          <div class="text-center"><b>No Pending Job</b></div>
+        </mat-tab>
+       
+      </mat-tab-group>
+      
+</div>
 
-</mat-sidenav-content>
-</mat-sidenav-container>
+
+<div *ngIf="clientall">
+    <app-client></app-client>
+</div>
+
+
 
