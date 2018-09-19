@@ -34,7 +34,7 @@ import { DenimComponent } from './homepages/customer-view/categories/fabrics/den
 const appRoutes:Routes = [
   {
     path:'',
-    component: GuestDashComponent
+    component: GuestNavComponent
   },
   {
     path:'dashboard',
