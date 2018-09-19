@@ -1,11 +1,38 @@
-<mat-toolbar class="fixed-top" color="">
-    <a href="tailor"><button
+<mat-sidenav-container class="sidenav-container" id="sidenav-container">
+    <mat-sidenav
+    #drawer
+    class="sidenav" id="sidenav"
+    fixedInViewport="true">
+    <!-- <mat-toolbar color="">Menu</mat-toolbar> -->
+    <mat-nav-list>
+        <span><img src="src/assets/images/male.png" class="img-fluid rounded-circle"><br><b>corlard3y</b></span> <hr>    
+      <a mat-list-item  routerLink="/tailor">Home</a>
+      <a mat-list-item href="#">Inbox</a>
+      <a mat-list-item href="#">Notifications</a>
+      <a mat-list-item href="#">Online Status<mat-slide-toggle></mat-slide-toggle> </a> <hr>
+      <a mat-list-item routerLink="/tailor">Manage Jobs</a>
+      <a mat-list-item routerLink="/tailor">My Clients</a>
+      <a mat-list-item routerLink="/tailor">My Earnings</a>
+      <a mat-list-item routerLink="/tailor">My Services</a><hr>
+      <a mat-list-item routerLink="/tailor">My profile</a> 
+      <a mat-list-item routerLink="/tailor">Support</a>
+      <a mat-list-item href="#">View as Client</a>
+      <a mat-list-item href="">Logout</a>    
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="fixed-top" color="">
+      <button
       type="button"
-      mat-icon-button>
-      <i class="fa fa-chevron-left"></i>
-    </button></a>
-  <span class="beta">Beta</span>
-  </mat-toolbar>
+      aria-label="Toggle sidenav"
+      mat-icon-button
+      (click)="drawer.toggle()">
+      <i class="fa fa-bars"></i>
+    </button>
+    <span class="beta">Beta</span>
+    </mat-toolbar>
+
+
 <div class="container form-search">
     <span class="input-group">
         <span class="input-group-addon"><button class="btn-search"><i class="fa fa-search"></i></button><input type="text" placeholder="search anything..." class="search"></span>
@@ -75,4 +102,7 @@
     </mat-tab>
    
   </mat-tab-group>
+
+</mat-sidenav-content>
+</mat-sidenav-container>
 
