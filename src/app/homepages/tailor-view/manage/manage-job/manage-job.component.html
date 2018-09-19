@@ -1,4 +1,4 @@
-<mat-sidenav-container class="sidenav-container" id="sidenav-container">
+<!-- <mat-sidenav-container class="sidenav-container" id="sidenav-container">
   <mat-sidenav
   #drawer
   class="sidenav" id="sidenav"
@@ -29,12 +29,15 @@
     <i class="fa fa-bars"></i>
   </button>
   <span class="beta">Beta</span>
-  </mat-toolbar>
-
+  </mat-toolbar> -->
+<div *ngIf="managejob">
   <div class="container form-search">
     <span class="input-group">
         <span class="input-group-addon"><button class="btn-search"><i class="fa fa-search"></i></button><input type="text" placeholder="search anything..." class="search"></span>
      </span>
+  </div>
+  <div class="container-fluid head">
+    <span><a (click)="change('man')">Manage Clients</a></span> > <span><a >Manage Jobs</a></span>
   </div>
 <div class="container-fluid all">
       <mat-card>
@@ -125,7 +128,12 @@
               
    </mat-tab>
 </mat-tab-group>
+</div>
+<div *ngIf="manager">
+  <app-manage></app-manage>
+</div>
  
-</mat-sidenav-content>
-</mat-sidenav-container>
+ 
+<!-- </mat-sidenav-content>
+</mat-sidenav-container> -->
 

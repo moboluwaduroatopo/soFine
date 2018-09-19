@@ -7,6 +7,12 @@
     width:240px;
     box-shadow: 3px 0 6px rgba(0,0,0,.24); 
   }
+  .head{
+    font-size: 14px;
+    margin-top: 1pc
+}
+.head span a{color:#555555}
+.head span a:hover{color:#2AB967;text-decoration: underline}
   mat-toolbar
   {
       background-color: #2ab967;
@@ -24,7 +30,6 @@
 }
   hr{padding: 0px;margin-left: 1pc;margin-right: 1pc}
 .form-search{margin-top: 5pc;}
-.all{margin-top: 1pc;}
 .input-group{
   height: 30px;background-color: transparent;border: none}
 .input-group-addon{height: 30px;background-color: transparent;border: none}

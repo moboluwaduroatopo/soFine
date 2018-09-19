@@ -12,6 +12,9 @@ export interface gender {
 })
 export class ManageJobComponent implements OnInit {
 
+  manager = false;
+  managejob = true;
+
   genders:gender[] = [
     {value: 'male', viewValue: 'Male'},
     {value: 'female', viewValue: 'Female'}
@@ -21,6 +24,11 @@ export class ManageJobComponent implements OnInit {
   // }
 
   ngOnInit() {
+  }
+
+  change(tick){
+    var result = (tick == 'man')?this.manager=true:this.manager=false;
+    var result = (tick == 'managejobs')?this.managejob=true:this.managejob=false;
   }
 
 }

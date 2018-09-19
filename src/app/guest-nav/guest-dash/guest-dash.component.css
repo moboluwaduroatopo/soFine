@@ -2,13 +2,22 @@ mat-toolbar{background-color: transparent;height: 4pc}
 mat-toolbar a{text-decoration: none;color:white}
 .beta{color: white;font-size: 32px;font-family: Georgia, 'Times New Roman', Times, serif;margin-right: 2pc}
 .form-search{display: none}
-@media(min-width:1050px) and (max-width:2500px){
+@media(max-width:1499px) and (min-width:1050px){
     .side-btn{display: none}
     .footer-500{display: none}
     .carousel-item{
         width:100vw;
         height: 500px;
     }
+}
+@media(max-width:2560px) and (min-width:1500px){
+    .side-btn{display: none}
+    .footer-500{display: none}
+    .carousel-item{
+        width:100vw;
+        height: 500px;
+    }
+
 }
 .carddd
 {margin-bottom: 2pc}

@@ -18,7 +18,7 @@ import { ClientComponent } from './homepages/tailor-view/client/client.component
 import { DetailsComponent } from './homepages/tailor-view/details/details.component';
 import { MyServicesComponent } from './homepages/tailor-view/my-services/my-services.component';
 import { ManageComponent } from './homepages/tailor-view/manage/manage.component';
-import { ManageJobComponent } from './homepages/tailor-view/manage-job/manage-job.component';
+import { ManageJobComponent } from './homepages/tailor-view/manage/manage-job/manage-job.component';
 import { EarningComponent } from './homepages/tailor-view/earning/earning.component';
 import { DashboardSupportComponent } from './homepages/tailor-view/dashboard-support/dashboard-support.component';
 import { ChatboxComponent } from './homepages/customer-view/inbox/chatbox/chatbox.component';
