@@ -30,6 +30,4 @@ export class TailorViewComponent implements OnInit {
     var result = (take == 'mysupport')?this.dashboardsupport=true:this.dashboardsupport=false;
   }
 
-
-
 }

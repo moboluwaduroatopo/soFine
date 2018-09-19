@@ -4,8 +4,8 @@
         class="sidenav" id="sidenav"
         fixedInViewport="true">
         <mat-nav-list>
-          <button class="btn-joinnow"><a href="reg">Join Beta</a></button> <hr>
-          <a mat-list-item href="login">Sign In</a>
+          <button class="btn-joinnow"><a href="#" routerLink="/reg">Join Beta</a></button> <hr>
+          <a mat-list-item href="#" routerLink="/login">Sign In</a>
           <a mat-list-item (click)="side('home')">Guest Home</a>
           <a mat-list-item (click)="side('about')">About</a>
           <a mat-list-item (click)="side('policy')">Privacy Policy</a>
@@ -29,8 +29,8 @@
           <a href="#" (click)="side('about')" class="navlink link">About</a>
           <a href="#" (click)="side('policy')" class="navlink">Policy</a>
           <a href="#" (click)="side('support')" class="navlink">Support</a>
-          <a href="login" class="navlink">Sign In</a>
-          <a href="reg" id="joinlink"><button class="btn-join">Join</button> </a>       
+          <a href="#" routerLink="/login" class="navlink">Sign In</a>
+          <a href="#" routerLink="/reg" id="joinlink"><button class="btn-join">Join</button> </a>       
         </mat-toolbar>
         <div *ngIf="guest">
             <app-guest-dash></app-guest-dash>

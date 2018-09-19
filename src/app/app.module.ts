@@ -50,7 +50,8 @@ import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
 import {HttpClientModule} from '@angular/common/http';
 import {NgModule} from '@angular/core';
-import { ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule,} from '@angular/forms'
+
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -87,8 +88,10 @@ import {
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
-  MatFormFieldModule,
+  MatFormFieldModule, 
 } from '@angular/material';
+import {BehaviorSubject} from 'rxjs';
+import {MatTreeNestedDataSource} from '@angular/material/tree';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -107,6 +110,8 @@ import { SidenavComponent } from './homepages/tailor-view/sidenav/sidenav.compon
 import { RegComponent } from './join-comp/reg/reg.component';
 import { FormsModule,  } from '@angular/forms';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
+import { InboxComponent } from './homepages/customer-view/inbox/inbox.component';
+import { SettingsComponent } from './homepages/tailor-view/settings/settings.component';
 import { ProfileComponent } from './homepages/tailor-view/profile/profile.component';
 import { ClientComponent } from './homepages/tailor-view/client/client.component';
 import { DetailsComponent } from './homepages/tailor-view/details/details.component';
@@ -116,6 +121,15 @@ import { ManageJobComponent } from './homepages/tailor-view/manage-job/manage-jo
 import { EarningComponent } from './homepages/tailor-view/earning/earning.component';
 import { DashboardSupportComponent } from './homepages/tailor-view/dashboard-support/dashboard-support.component';
 
+import { NotificationComponent } from './homepages/customer-view/notification/notification.component';
+import { DashboardComponent } from './homepages/customer-view/dashboard/dashboard.component';
+import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dashboardhome/dashboardhome.component';
+import { ChatboxComponent } from './homepages/customer-view/inbox/chatbox/chatbox.component';
+import { DatasetService } from './dataset.service';
+
+import { CategoriesComponent } from './homepages/customer-view/categories/categories.component';
+import { FabricsComponent } from './homepages/customer-view/categories/fabrics/fabrics.component';
+import { DenimComponent } from './homepages/customer-view/categories/fabrics/denim/denim.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -131,6 +145,8 @@ import { DashboardSupportComponent } from './homepages/tailor-view/dashboard-sup
     LoginComponent,
     RegComponent,
     ForgotComponent,
+    InboxComponent,
+    SettingsComponent,
     ProfileComponent,
     ClientComponent,
     DetailsComponent,
@@ -139,7 +155,14 @@ import { DashboardSupportComponent } from './homepages/tailor-view/dashboard-sup
     ManageJobComponent,
     EarningComponent,
     DashboardSupportComponent,
-    SidenavComponent
+    SidenavComponent,
+    NotificationComponent,
+    DashboardComponent,
+    DashboardhomeComponent,
+    ChatboxComponent,
+    CategoriesComponent,
+    FabricsComponent,
+    DenimComponent,
   ],
   imports: [
     BrowserModule,
@@ -181,7 +204,11 @@ import { DashboardSupportComponent } from './homepages/tailor-view/dashboard-sup
   MatTooltipModule,
   MatTreeModule,
   MatFormFieldModule,
-  FormsModule
+  FormsModule,
+  BrowserModule,
+  FormsModule,
+  ReactiveFormsModule,
+  HttpClientModule,
   ],
   exports: [
     BrowserModule,
@@ -222,10 +249,16 @@ import { DashboardSupportComponent } from './homepages/tailor-view/dashboard-sup
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
-  MatFormFieldModule
+  MatFormFieldModule,
+  BrowserModule,
+  FormsModule,
+  ReactiveFormsModule,
+  HttpClientModule,
   ],
   entryComponents: [],
-  providers: [],
+  providers: [DatasetService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { };
+
+platformBrowserDynamic().bootstrapModule(AppModule);

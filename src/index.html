@@ -22,26 +22,6 @@
 	<script type="text/javascript" src="src/bootstrap4/js/bootstrap.min.js"></script>
 
 </html>
-<script>
-  $(document).ready(function(){
-		
-				var scroll_start = 0;
-			var startchange = $('mat-toolbar');
-			var offset = startchange.offset();
-			if(window.innerWidth > 1100)
-			{
-			if (startchange.length){
-				$(document).scroll(function(){
-					scroll_start = $(document).scrollTop();
-						if(scroll_start <400) {
-							$(".fixed-top").css('background-color','transparent','transition', 'background-color 1s ease-in-out ');
-						} else {
-							$(".fixed-top").css('background-color','rgb(0,0,0,0.8)');	
-						}
-				});
-			}
-			}
-		});
-	</script>
+
 	
 
