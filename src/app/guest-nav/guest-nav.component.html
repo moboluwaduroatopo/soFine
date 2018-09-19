@@ -29,7 +29,7 @@
           <a href="#" (click)="side('about')" class="navlink link">About</a>
           <a href="#" (click)="side('policy')" class="navlink">Policy</a>
           <a href="#" (click)="side('support')" class="navlink">Support</a>
-          <a href="#" routerLink="/login" class="navlink">Sign In</a>
+          <a href="#" (click)="openDialog()" class="navlink">Sign In</a>
           <a href="#" routerLink="/reg" id="joinlink"><button class="btn-join">Join</button> </a>       
         </mat-toolbar>
         <div *ngIf="guest">
