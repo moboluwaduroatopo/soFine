@@ -85,6 +85,7 @@ import { DatasetService } from './dataset.service';
 import { CategoriesComponent } from './homepages/customer-view/categories/categories.component';
 import { FabricsComponent } from './homepages/customer-view/categories/fabrics/fabrics.component';
 import { DenimComponent } from './homepages/customer-view/categories/fabrics/denim/denim.component';
+import { ProductDescriptionComponent } from './homepages/customer-view/product-description/product-description.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -118,6 +119,7 @@ import { DenimComponent } from './homepages/customer-view/categories/fabrics/den
     CategoriesComponent,
     FabricsComponent,
     DenimComponent,
+    ProductDescriptionComponent,
   ],
   imports: [
     BrowserModule,
