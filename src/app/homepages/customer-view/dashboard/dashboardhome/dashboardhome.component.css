@@ -3,6 +3,29 @@
     max-width: 80% !important;
     padding-bottom: 70px !important;
 }
+.row .request{
+    align-items: center;
+    background-color: #D3D2D0;
+    background-origin: padding-box;
+    padding: 5px;
+}
+.request .btn{
+    text-align: center;
+    padding-top: 12px;
+    margin-left: 6pc;
+}
+.request h3{
+    text-align: center;
+    padding-top: 15px;
+}
+.request p{
+ text-align: center;
+ padding-top: 10px;
+}
+.carousel-item{
+    /* width:100vw; */
+    height: 250px;
+}
 .header1{
     border-bottom:3px solid rgb(89, 223, 89);
     width:100%;
