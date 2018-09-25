@@ -12,77 +12,29 @@ export class TailorViewComponent implements OnInit {
    client = false;
    services = false;
    profile = false;
+   notifications = false;
+   inbox = false;
+   setting = false;
    dashboardsupport = false;
+
 
   constructor() { }
 
   ngOnInit() {
   }
-  home = function()
-  {
-   this.tailor = true;
-   this.manage = false;
-   this.earning = false;
-   this.client = false;
-   this.services = false;
-   this.profile = false;
-   this.dashboardsupport = false;
-  }
-  managejobs = function(){
-    this.tailor = false;
-    this.manage = true;
-    this.earning = false;
-   this.client = false;
-   this.services = false;
-   this.profile = false;
-   this.dashboardsupport = false;
-    // document.getElementById("sidenav").style.width = "0px";
-  }
-  clients = function(){
-    this.tailor = false;
-    this.manage = false;
-    this.earning = false;
-   this.client = true;
-   this.services = false;
-   this.profile = false;
-   this.dashboardsupport = false;
-  }
-  myservices = function(){
-    this.tailor = false;
-    this.manage = false;
-    this.earning = false;
-   this.client = false;
-   this.services = true;
-   this.profile = false;
-   this.dashboardsupport = false;
-  }
-  myprofile = function(){
-    this.tailor = false;
-    this.manage = false;
-    this.earning = false;
-   this.client = false;
-   this.services = false;
-   this.profile = true;
-   this.dashboardsupport = false;
-  }
-  myearnings = function(){
-    this.tailor = false;
-    this.manage = false;
-    this.earning = true;
-   this.client = false;
-   this.services = false;
-   this.profile = false;
-   this.dashboardsupport = false;
-  }
-  mysupport = function(){
-    this.tailor = false;
-    this.manage = false;
-    this.earning = false;
-   this.client = false;
-   this.services = false;
-   this.profile = false;
-   this.dashboardsupport = true;
-  }
 
+  menu(take)
+  {
+    var result = (take == 'home')?this.tailor=true:this.tailor=false;
+    var result = (take == 'managejobs')?this.manage=true:this.manage=false;
+    var result = (take == 'myearnings')?this.earning=true:this.earning=false;
+    var result = (take == 'myclients')?this.client=true:this.client=false;
+    var result = (take == 'myservices')?this.services=true:this.services=false;
+    var result = (take == 'myprofile')?this.profile=true:this.profile=false;
+    var result = (take == 'myinbox')?this.inbox=true:this.inbox=false;
+    var result = (take == 'mynotifi')?this.notifications=true:this.notifications=false;
+    var result = (take == 'mysetting')?this.setting=true:this.setting=false;
+    var result = (take == 'mysupport')?this.dashboardsupport=true:this.dashboardsupport=false;
+  }
 
 }
